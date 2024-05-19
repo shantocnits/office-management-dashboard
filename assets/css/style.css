@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-font: "Baloo Da 2", sans-serif;
+  --white: #FFFFFF;
+  --text-color: #192045;
+  --text-color2: #AF2222;
+  --primary-color: #FFD4D4;
+  --stroke: #FFB7B7;
+  --hover-color: #FDEAEA;
+  --gray: #B8B8B8;
+  --background: #FFD4D4;
+  --background2: #FFB7B7;
+  --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 17%);
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/* ====================
+   Reset Default CSS End
+   ==================== */
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   h1 {
+    border: 1px solid black;
+    font-family: var(--primary-font);
+    
+   }
