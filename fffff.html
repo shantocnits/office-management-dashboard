@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/app.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl col-sm-6">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h4 class="mb-2">46.34k</h4>
+                        <p class="text-muted mb-0">Total Sales</p>
+                      </div>
+                      <div class="avatar-md">
+                        <span class="avatar-title bg-soft-primary rounded">
+                          <i
+                            class="font-size-24 text-primary"
+                            data-feather="briefcase"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl col-sm-6">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h4 class="mb-2">3,895</h4>
+                        <p class="text-muted mb-0">Total Items</p>
+                      </div>
+                      <div class="avatar-md">
+                        <span class="avatar-title bg-soft-primary rounded">
+                          <i
+                            class="font-size-24 text-primary"
+                            data-feather="shopping-bag"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl col-sm-6">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h4 class="mb-2">$61,985</h4>
+                        <p class="text-muted mb-0">Average Sales</p>
+                      </div>
+                      <div class="avatar-md">
+                        <span class="avatar-title bg-soft-primary rounded">
+                          <i
+                            class="font-size-24 text-primary"
+                            data-feather="dollar-sign"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl col-sm-6">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h4 class="mb-2">12,584</h4>
+                        <p class="text-muted mb-0">Total Users</p>
+                      </div>
+                      <div class="avatar-md">
+                        <span class="avatar-title bg-soft-primary rounded">
+                          <i
+                            class="font-size-24 text-primary"
+                            data-feather="users"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h4 class="mb-2">24,526</h4>
+                        <p class="text-muted mb-0">Order Delivery</p>
+                      </div>
+                      <div class="avatar-md">
+                        <span class="avatar-title bg-soft-primary rounded">
+                          <i
+                            class="font-size-24 text-primary"
+                            data-feather="truck"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end row-->
+
+            <div class="row">
+              <div class="col-xl-8">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body pb-xl-2">
+                    <div class="row">
+                      <div class="col">
+                        <h4 class="card-title mb-4">
+                          Sales Over Time By Value
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control bg-light border-0 form-control-sm"
+                            id="sales-over-time"
+                            data-deafult-date="01 Jan 2022 to 31 Jan 2022"
+                          />
+                          <div
+                            class="input-group-text bg-primary border-primary text-white"
+                          >
+                            <i class="wh-16" data-feather="calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                      <div class="col-lg-8">
+                        <div
+                          class="apex-chart"
+                          data-colors='["#5052ba", "#cfd1dc"]'
+                          id="sales-over"
+                        ></div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mt-2">
+                          <h4>$23,590.00</h4>
+                          <p class="text-muted">Available Balance</p>
+                          <div class="mt-4">
+                            <ul class="list-unstyled mt-sm-0 mt-5">
+                              <li class="border-bottom pb-3">
+                                <i
+                                  class="text-primary me-2 wh-20"
+                                  data-feather="camera"
+                                ></i>
+                                Smart Camera
+                                <span class="float-end text-dark">56,236</span>
+                              </li>
+                              <li class="border-bottom py-3">
+                                <i
+                                  class="text-primary me-2 wh-20"
+                                  data-feather="tablet"
+                                ></i>
+                                Ipad 2021 Modal
+                                <span class="float-end text-dark">220k</span>
+                              </li>
+                              <li class="border-bottom py-3">
+                                <i
+                                  class="text-primary me-2 wh-20"
+                                  data-feather="tv"
+                                ></i>
+                                New Smart 4k TV
+                                <span class="float-end text-dark">51,568</span>
+                              </li>
+                              <li class="py-3">
+                                <i
+                                  class="text-primary me-2 wh-20"
+                                  data-feather="monitor"
+                                ></i>
+                                Mackbook 18 inch
+                                <span class="float-end text-dark">1568</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="text-center">
+                            <a href="" class="fw-bold"
+                              ><u
+                                >View more<i
+                                  class="wh-14 ms-2"
+                                  data-feather="arrow-right"
+                                ></i></u
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-4">Weekly Sales</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Today<i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Yearly</a>
+                          <a class="dropdown-item" href="#">Monthly</a>
+                          <a class="dropdown-item" href="#">Weekly</a>
+                          <a class="dropdown-item" href="#">Today</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div
+                        id="weekly-chart"
+                        data-colors='["#5052ba"]'
+                        class="apex-charts"
+                      ></div>
+                    </div>
+
+                    <p class="text-muted text-center mt-2">
+                      This Week Total Sales And Earning
+                    </p>
+
+                    <div class="row mt-4 pt-1">
+                      <div class="col border-end">
+                        <div class="text-center">
+                          <h4>502K</h4>
+                          <p class="text-muted mb-0">Total Sales</p>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-center">
+                          <h4>65.4M</h4>
+                          <p class="text-muted mb-0">Total Founding</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end row-->
+
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <!-- Card -->
+                    <div class="card overflow-hidden">
+                      <div class="card-body">
+                        <i
+                          class="text-primary widget-box-1-icon"
+                          data-feather="facebook"
+                        ></i>
+                        <div class="d-flex align-items-center">
+                          <div class="avatar-md">
+                            <span class="avatar-title bg-soft-primary rounded">
+                              <i
+                                class="text-primary"
+                                data-feather="facebook"
+                              ></i>
+                            </span>
+                          </div>
+                          <div class="flex-1 ms-3">
+                            <h5 class="font-size-17 mb-1 pb-1">Facebook</h5>
+                            <p class="text-muted mb-0">Followers</p>
+                          </div>
+                        </div>
+                        <div class="mt-4 pt-1">
+                          <h4 class="mb-2">165.2K</h4>
+                          <p class="ms-2 float-end mb-0">
+                            <i
+                              class="align-middle text-success me-2 wh-14"
+                              data-feather="arrow-up"
+                            ></i
+                            >50%
+                          </p>
+                          <p class="text-muted mb-0 text-truncate">
+                            3.2k Sale - 4.2k Like
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <!-- Card -->
+                    <div class="card overflow-hidden">
+                      <div class="card-body">
+                        <i
+                          class="text-primary widget-box-1-icon"
+                          data-feather="twitter"
+                        ></i>
+                        <div class="d-flex align-items-center">
+                          <div class="avatar-md">
+                            <span class="avatar-title bg-soft-primary rounded">
+                              <i
+                                class="font-size-24 text-primary"
+                                data-feather="twitter"
+                              ></i>
+                            </span>
+                          </div>
+                          <div class="flex-1 ms-3">
+                            <h5 class="font-size-17 mb-1 pb-1">Twitter</h5>
+                            <p class="text-muted mb-0">Followers</p>
+                          </div>
+                        </div>
+                        <div class="mt-4 pt-1">
+                          <h4 class="mb-2">245.7K</h4>
+                          <p class="ms-2 float-end mb-0">
+                            <i
+                              class="align-middle text-success me-2 wh-14"
+                              data-feather="arrow-up"
+                            ></i
+                            >70%
+                          </p>
+                          <p class="text-muted mb-0 text-truncate">
+                            3.1k Sale - 3.7k Like
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body pb-xl-1">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-2">Overview</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Last Year<i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      id="overview"
+                      data-colors='["#5052ba", "#d3d3ee"]'
+                      class="apex-chart"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <!--end row-->
+
+              <div class="col-xl-4">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body pb-xl-2">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-2">Month Earnings</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Last Month<i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Last Week</a>
+                          <a class="dropdown-item" href="#">Last Month</a>
+                          <a class="dropdown-item" href="#">Last Year</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                      <div class="col-sm">
+                        <div
+                          id="earnings-chart"
+                          data-colors='["#5052ba"]'
+                          class="apex-charts"
+                          dir="ltr"
+                        ></div>
+                      </div>
+                      <div class="col-sm">
+                        <p class="text-muted">Total Expense</p>
+                        <h4>$6325.74</h4>
+                        <p class="text-muted mb-0">
+                          Profile is 75% More than last Month
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body pb-xl-2">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-2">Total Order</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Last Month<i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Last Week</a>
+                          <a class="dropdown-item" href="#">Last Month</a>
+                          <a class="dropdown-item" href="#">Last Year</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                      <div class="col-sm">
+                        <div
+                          id="order-chart"
+                          data-colors='["#5052ba"]'
+                          class="apex-charts"
+                          dir="ltr"
+                        ></div>
+                      </div>
+                      <div class="col-sm">
+                        <p class="text-muted">Total Order</p>
+                        <h4>125,86k</h4>
+                        <p class="text-muted mb-0">
+                          Order Complated is 40% More than last Month
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title mb-2">Top Products</h4>
+
+                    <div
+                      class="mx-n4 px-4"
+                      data-simplebar
+                      style="max-height: 392px"
+                    >
+                      <div class="d-flex align-items-center py-3">
+                        <div class="flex-shrink-0">
+                          <div class="avatar-md">
+                            <div
+                              class="product-img avatar-title img-thumbnail bg-light"
+                            >
+                              <img
+                                src="assets/images/product/img-1.png"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3 overflow-hidden">
+                          <h5 class="font-size-17 text-truncate mb-1">
+                            Watch4 Classic LTE
+                          </h5>
+                          <p class="text-muted mb-0">#MS5624</p>
+                        </div>
+                        <div class="flex-shrink-0 text-end ms-3">
+                          <h5 class="font-size-17 text-primary mb-1">$1,562</h5>
+                          <p class="text-muted mb-0">5k Sale</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center border-top py-3">
+                        <div class="flex-shrink-0">
+                          <div class="avatar-md">
+                            <div
+                              class="product-img avatar-title img-thumbnail bg-light"
+                            >
+                              <img
+                                src="assets/images/product/img-2.png"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3 overflow-hidden">
+                          <h5 class="font-size-17 text-truncate mb-1">
+                            Digital Silicone Black
+                          </h5>
+                          <p class="text-muted mb-0">#FD5264</p>
+                        </div>
+                        <div class="flex-shrink-0 text-end ms-3">
+                          <h5 class="font-size-17 text-primary mb-1">$2,625</h5>
+                          <p class="text-muted mb-0">2k Sale</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center border-top py-3">
+                        <div class="flex-shrink-0">
+                          <div class="avatar-md">
+                            <div
+                              class="product-img avatar-title img-thumbnail bg-light"
+                            >
+                              <img
+                                src="assets/images/product/img-3.png"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3 overflow-hidden">
+                          <h5 class="font-size-17 text-truncate mb-1">
+                            ColorFit Smartwatch
+                          </h5>
+                          <p class="text-muted mb-0">#DF8568</p>
+                        </div>
+                        <div class="flex-shrink-0 text-end ms-3">
+                          <h5 class="font-size-17 text-primary mb-1">$6,121</h5>
+                          <p class="text-muted mb-0">1k Sale</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center border-top border-bottom py-3"
+                      >
+                        <div class="flex-shrink-0">
+                          <div class="avatar-md">
+                            <div
+                              class="product-img avatar-title img-thumbnail bg-light"
+                            >
+                              <img
+                                src="assets/images/product/img-4.png"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3 overflow-hidden">
+                          <h5 class="font-size-17 text-truncate mb-1">
+                            Black Dial Men Watch
+                          </h5>
+                          <p class="text-muted mb-0">#AP1243</p>
+                        </div>
+                        <div class="flex-shrink-0 text-end ms-3">
+                          <h5 class="font-size-17 text-primary mb-1">$2,468</h5>
+                          <p class="text-muted mb-0">3k Sale</p>
+                        </div>
+                      </div>
+
+                      <div class="text-center mt-3">
+                        <a href="" class="fw-bold"
+                          ><u
+                            >Show All<i
+                              class="wh-14 ms-2"
+                              data-feather="arrow-right"
+                            ></i></u
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end row-->
+
+            <div class="row">
+              <div class="col-xl-8">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-3">Latest Trasactions</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Last Month<i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="mx-n4 px-4"
+                      data-simplebar
+                      style="max-height: 417px"
+                    >
+                      <div class="table-responsive">
+                        <table
+                          class="table table-centered align-middle table-nowrap table-striped mb-0"
+                        >
+                          <thead>
+                            <tr>
+                              <th>Order ID</th>
+                              <th>Name</th>
+                              <th style="width: 120px">Date</th>
+                              <th>Address</th>
+                              <th style="width: 120px">Amount</th>
+                              <th style="width: 150px">Status</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#MB2540</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-1.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">Neal Matthews</div>
+                                </div>
+                              </td>
+                              <td>07 Oct</td>
+                              <td>2558 Cecil Chicago</td>
+                              <td>$ 500</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-success"
+                                ></i>
+                                Paid
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#SM5625</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-3.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">
+                                    Lavern Hochstetler
+                                  </div>
+                                </div>
+                              </td>
+                              <td>11 Oct</td>
+                              <td>2385 Brookside Drive</td>
+                              <td>$ 600</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-danger"
+                                ></i>
+                                Cancelled
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#BH8545</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-4.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">Randy Fabrizio</div>
+                                </div>
+                              </td>
+                              <td>15 Oct</td>
+                              <td>2492 Short Street</td>
+                              <td>$ 800</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-success"
+                                ></i>
+                                Paid
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#MD3256</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-5.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">Harold Fraser</div>
+                                </div>
+                              </td>
+                              <td>22 Oct</td>
+                              <td>230 Pinewood Drive Grove</td>
+                              <td>$ 900</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-success"
+                                ></i>
+                                Paid
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#KP5623</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-7.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">Jeffrey Puccio</div>
+                                </div>
+                              </td>
+                              <td>26 Oct</td>
+                              <td>2987 Cinnamon San Antonio</td>
+                              <td>$ 600</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-danger"
+                                ></i>
+                                Cancelled
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a href="javascript: void(0);" class="text-body"
+                                  >#KS6841</a
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="rounded-circle avatar-sm"
+                                    src="assets/images/users/avatar-6.jpg"
+                                    alt=""
+                                  />
+                                  <div class="flex-1 ms-3">Ronnie Rivera</div>
+                                </div>
+                              </td>
+                              <td>30 Oct</td>
+                              <td>355 James Avenue El</td>
+                              <td>$ 1200</td>
+                              <td>
+                                <i
+                                  class="mdi mdi-circle font-size-10 me-1 align-middle text-info"
+                                ></i>
+                                Pendding
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <a
+                                    class="text-muted dropdown-toggle font-size-24"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                  >
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                  </a>
+
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-3">Sales By Country</h4>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-light border-light btn-sm dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          View All
+                          <i
+                            class="align-middle ms-1 wh-15"
+                            data-feather="chevron-down"
+                          ></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Members</a>
+                          <a class="dropdown-item" href="#">New Members</a>
+                          <a class="dropdown-item" href="#">Old Members</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="world-map-markers" style="height: 212px"></div>
+                    <div class="mt-4 px-3">
+                      <div
+                        class="sales-weidget d-flex align-items-center border-bottom"
+                      >
+                        <div class="m-auto">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="assets/images/flags/us.jpg"
+                              alt="user-image"
+                              height="18"
+                            />
+                            <div class="flex-1 ms-3">
+                              <p class="mb-0">US</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 me-5 text-end">
+                          <p class="mb-0">
+                            Sales: 30,000
+                            <i
+                              class="align-middle text-success me-2 wh-14"
+                              data-feather="arrow-up"
+                            ></i>
+                          </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                          <p class="mb-0">40%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="sales-weidget d-flex align-items-center border-bottom"
+                      >
+                        <div class="m-auto">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="assets/images/flags/italy.jpg"
+                              alt="user-image"
+                              height="18"
+                            />
+                            <div class="flex-1 ms-3">
+                              <p class="mb-0">Italy</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 me-5 text-end">
+                          <p class="mb-0">
+                            Sales: 72,000
+                            <i
+                              class="align-middle text-danger me-2 wh-14"
+                              data-feather="arrow-down"
+                            ></i>
+                          </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                          <p class="mb-0">74%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="sales-weidget d-flex align-items-center border-bottom"
+                      >
+                        <div class="m-auto">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="assets/images/flags/spain.jpg"
+                              alt="user-image"
+                              height="18"
+                            />
+                            <div class="flex-1 ms-3">
+                              <p class="mb-0">Spain</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 me-5 text-end">
+                          <p class="mb-0">
+                            Sales: 42,000
+                            <i
+                              class="align-middle text-success me-2 wh-14"
+                              data-feather="arrow-up"
+                            ></i>
+                          </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                          <p class="mb-0">52%</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center pt-3">
+                        <div class="m-auto">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="assets/images/flags/french.jpg"
+                              alt="user-image"
+                              height="18"
+                            />
+                            <div class="flex-1 ms-3">
+                              <p class="mb-0">French</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 me-5 text-end">
+                          <p class="mb-0">
+                            Sales: 56,000
+                            <i
+                              class="align-middle text-success me-2 wh-14"
+                              data-feather="arrow-up"
+                            ></i>
+                          </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                          <p class="mb-0">56%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end row-->
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Jassa.
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    
+</body>
+</html>
