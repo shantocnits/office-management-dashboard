@@ -107,6 +107,9 @@ label {
   height: 70px;
   padding: 0 calc(24px / 2) 0 0;
 }
+.navbar-header .dropdown .header-item.show {
+  color: #5052ba;
+}
 .navbar-header .navbar-brand-box {
   display: none;
 }
@@ -204,6 +207,14 @@ body:not([data-sidebar-size="sm"]) .app-search {
 }
 .page-content {
   padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+}
+.header-item {
+  height: 70px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  fill: #555b6d;
+  border: 0;
+  border-radius: 0;
 }
 .header-profile-user {
   height: 42px;
@@ -599,7 +610,6 @@ body[data-layout-mode="dark"] .right-bar {
   -webkit-transition-property: height, visibility;
   transition-property: height, visibility;
 }
-
 .vertical-menu {
   width: 260px;
   z-index: 1005;
@@ -684,7 +694,8 @@ body[data-layout-mode="dark"] .right-bar {
   line-height: 1.40625rem;
 }
 #sidebar-menu ul li a:hover {
-  color: #383c40;
+  /* background: var(--hover-color);
+  margin: 10px 40px; */
 }
 #sidebar-menu ul li a:hover .nav-icon {
   color: #383c40;
@@ -813,11 +824,11 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a {
   transition: none;
   display: block;
 }
-body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a:active,
+/* body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a:active,
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a:focus,
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a:hover {
   color: #383c40;
-}
+} */
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a i {
   font-size: 1.3rem;
   text-align: center;
@@ -851,8 +862,6 @@ body[data-sidebar-size="sm"]
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > a {
   position: relative;
   width: calc(190px + 70px);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
   color: var(--text-color);
   background-color: var(--hover-color);
   -webkit-transition: none;
@@ -860,7 +869,7 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > a {
   -webkit-box-shadow: inset 0 3px 10px 0 rgba(154, 161, 171, 0.1);
   box-shadow: inset 0 3px 10px 0 rgba(154, 161, 171, 0.1);
 }
-/* body[data-sidebar-size="sm"]
+body[data-sidebar-size="sm"]
   .vertical-menu
   #sidebar-menu
   > ul
@@ -868,7 +877,7 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > a {
   > a
   .nav-icon {
   color: #5052ba;
-} */
+}
 body[data-sidebar-size="sm"]
   .vertical-menu
   #sidebar-menu
@@ -884,11 +893,11 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > ul {
   position: absolute;
   width: 190px;
   height: auto !important;
-  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
   box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
   border: 1px solid #eff0f2;
 }
-/* body[data-sidebar-size="sm"]
+body[data-sidebar-size="sm"]
   .vertical-menu
   #sidebar-menu
   > ul
@@ -898,7 +907,7 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > ul {
   -webkit-box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
   box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
   border: 1px solid #eff0f2;
-} */
+}
 body[data-sidebar-size="sm"]
   .vertical-menu
   #sidebar-menu
@@ -938,6 +947,7 @@ body[data-sidebar-size="sm"]
   > ul {
   display: block;
   left: 180px;
+  bottom: -40px;
   height: auto !important;
   margin-top: -36px;
   position: absolute;
@@ -956,9 +966,6 @@ body[data-sidebar-size="sm"]
   top: 12px;
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
-}
-body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul ul li.active a {
-  color: #fbfafd;
 }
 body[data-sidebar-size="sm"]
   .vertical-menu
@@ -1435,7 +1442,6 @@ body[data-sidebar="light"][data-sidebar-size="sm"] .logo span.logo-lg {
 .navbar-brand-box .brand-name {
   font-size: 18px;
   font-weight: bold;
-  padding-left: 5px;
   font-family: var(--primary-font);
   color: var(--text-color2);
 }
@@ -1700,7 +1706,7 @@ body[data-layout-mode="bordered"] .vertical-menu {
 .help-box {
   border-radius: 0.6rem;
   padding: 20px;
-  margin: 40px 16px 16px;
+  margin: 90px 16px 0px;
   position: relative;
   background-color: #302e3a;
 }
@@ -3567,6 +3573,7 @@ body[data-layout-mode="dark"] .card-radio {
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
   position: relative;
+  bottom: 0px;
   display: block;
   height: 100%;
   width: auto;
