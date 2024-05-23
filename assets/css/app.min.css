@@ -74,7 +74,7 @@ label {
    Reset Default CSS End
    ==================== */
 
-   .ishorizontal-topbar,
+.ishorizontal-topbar,
 .isvertical-topbar {
   position: fixed;
   top: 0;
