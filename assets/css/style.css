@@ -73,3 +73,35 @@ label {
 /* ====================
    Reset Default CSS End
    ==================== */
+
+
+/* Main Content Start */
+.main-content {
+  margin-left: 260px;
+}
+.main-content .content {
+  padding: 0 15px 10px 15px;
+  margin-top: 70px;
+}
+
+.main-content {
+  height: 800px;
+}
+.page-content {
+  padding: 90px 20px 0px 20px;
+}
+body[data-sidebar-size="sm"] .main-content {
+  margin-left: 70px;
+}
+
+@media (max-width: 991.98px) {
+  body[data-sidebar-size="md"] #page-topbar {
+    left: 0;
+  }
+
+  .main-content {
+    position: absolute;
+    left: -260px;
+    width: 100%;
+  }
+}
