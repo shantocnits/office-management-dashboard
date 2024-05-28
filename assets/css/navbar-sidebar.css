@@ -564,7 +564,6 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   right: 18px;
   top: 8px;
   transform: rotate(90deg);
-  color: var(--text-color) !important;
 }
 
 #sidebar-menu .has-arrow + ul .has-arrow:after {
@@ -581,7 +580,8 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.6rem 2rem;
+  margin: 0px 18px 8px 25px;
+  padding: 10px;
   color: #645e7a;
   position: relative;
   font-weight: 500;
@@ -592,6 +592,12 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+#sidebar-menu ul li a:hover {
+  background: var(--hover-color);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 #sidebar-menu ul li a .nav-icon {
@@ -616,7 +622,7 @@ body[data-sidebar-size="md"] .navbar-brand-box {
 }
 
 #sidebar-menu ul li ul.sub-menu li a {
-  padding: 0.5rem 1.5rem 0.5rem 52px;
+  padding: 0.5rem 1.5rem 0.5rem 30px;
   font-size: 18px;
 }
 
@@ -656,13 +662,18 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   color: var(--text-color);
 }
 
-#sidebar-menu ul li.mm-active .mm-show .mm-active > a {
-  color: #5052ba !important;
+#sidebar-menu ul li.mm-active > a {
+  color: var(--text-color) !important;
+  background: var(--hover-color) !important;
+  border-radius: 8px;
   background: 0 0;
 }
 
-#sidebar-menu ul li.mm-active .mm-show .mm-active > a:before {
-  border-color: transparent transparent #5052ba transparent;
+#sidebar-menu ul li.mm-active > .has-arrow:after  {
+  content: "\F0142";
+  font-family: "Material Design Icons";
+  display: block;
+  transform: rotate(-90deg);
 }
 
 body[data-sidebar-size="sm"] .vertical-menu {
@@ -701,7 +712,8 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li {
 }
 
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a {
-  padding: 15px 23px;
+  padding: 15px;
+  margin: 16px 8px 16px 8px;
   -webkit-transition: none;
   transition: none;
   display: block;
@@ -757,16 +769,6 @@ body[data-sidebar-size="sm"]
   > ul
   > li:hover
   > a
-  .nav-icon {
-  color: #5052ba;
-}
-
-body[data-sidebar-size="sm"]
-  .vertical-menu
-  #sidebar-menu
-  > ul
-  > li:hover
-  > a
   span {
   display: inline;
 }
@@ -785,10 +787,10 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > ul {
 body[data-sidebar-size="sm"]
   .vertical-menu
   #sidebar-menu
-  > ul
-  > li:hover
   ul
-  .has-arrow::after {
+  .sub-menu
+  li
+  .has-arrow:after{
   content: "\F0142";
   font-family: "Material Design Icons";
   display: block;
@@ -797,6 +799,24 @@ body[data-sidebar-size="sm"]
   right: 0px !important;
   top: 5px;
   transform: rotate(90deg);
+  color: var(--text-color) !important;
+}
+
+body[data-sidebar-size="sm"]
+  .vertical-menu
+  #sidebar-menu
+  ul
+  .sub-menu
+  li:hover
+  .has-arrow:after{
+  content: "\F0142";
+  font-family: "Material Design Icons";
+  display: block;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0px !important;
+  top: 5px;
+  transform: rotate(-90deg);
   color: var(--text-color) !important;
 }
 
@@ -1110,8 +1130,10 @@ body[data-layout-mode="bordered"] .vertical-menu {
 
 @media (max-width: 991.98px) {
   .vertical-menu {
-    display: none;
+    opacity: 0;
     top: 70px;
+    left: -260px;
+    transition: 0.3s;
   }
 
   .vertical-menu .sidebar-menu-scroll {
@@ -1125,7 +1147,14 @@ body[data-layout-mode="bordered"] .vertical-menu {
   }
 
   body.sidebar-enable .vertical-menu {
-    display: block;
+    opacity: 1;
+    top: 71px;
+    left: 0px;
+  }
+
+  body.sidebar-enable .simplebar-content {
+    overflow-y:hidden !important;
+    margin-bottom: 85px;
   }
 }
 
