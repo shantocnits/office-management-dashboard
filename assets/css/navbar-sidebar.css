@@ -385,6 +385,111 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   color: var(--text-color2);
 }
 
+.search-icon {
+  display: none;
+}
+
+.search-box .rounded {
+  background: var(--background) !important;
+  color: var(--background) !important;
+}
+
+.toggle-fullscreen-btn {
+	border: 0;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.toggle-full-screen {
+  padding: 7.52px 12px;
+}
+
+.toggle-fullscreen-svg {
+	display: block;
+	height: auto;
+}
+
+.toggle-fullscreen-btn:not(.on) .icon-fullscreen-leave {
+	display: none;
+}
+
+.toggle-fullscreen-btn.on .icon-fullscreen-enter {
+	display: none;
+}
+
+
+
+
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-top: 20px;
+}
+
+.light-mode-button:focus {
+  outline: none; /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+/* Light & Dark Mode Styles
+  --------------------------- */
+
+body {
+  background-color: #f6f6f6;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+body[light-mode="dark"] a {
+  color: #141516;
+}
+
 @media (max-width: 991.98px) {
   body[data-sidebar-size="md"] #page-topbar {
     left: 0;
@@ -448,6 +553,21 @@ body[data-sidebar-size="md"] .navbar-brand-box {
     .navbar-brand-box {
     background-color: #292731;
   }
+  .search-bar-box {
+    display: none !important;
+  }
+  .right-bar-toggle {
+    display: none;
+  }
+  .language-switch {
+    display: none !important;
+  }
+  .search-icon {
+    display: block;
+  }
+  .toggle-full-screen {
+    display: none !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -482,9 +602,6 @@ body[data-sidebar-size="md"] .navbar-brand-box {
 @media (max-width: 374.99px) {
   .navbar-brand-box {
     padding: 0 1rem;
-  }
-  .language-switch {
-    display: none !important;
   }
 }
 
