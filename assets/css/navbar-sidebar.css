@@ -783,7 +783,6 @@ body[light-mode="dark"] a {
   color: var(--text-color) !important;
   background: var(--hover-color) !important;
   border-radius: 8px;
-  background: 0 0;
 }
 
 #sidebar-menu ul li.mm-active > .has-arrow:after  {
@@ -830,7 +829,7 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li {
 
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a {
   padding: 15px;
-  margin: 16px 8px 16px 8px;
+  margin: 0px 8px 16px 8px;
   -webkit-transition: none;
   transition: none;
   display: block;
@@ -845,8 +844,9 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a i {
 }
 
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li > a span {
-  display: none;
+  opacity: 0;
   padding-left: 25px;
+  pointer-events: none;
 }
 
 body[data-sidebar-size="sm"]
@@ -870,6 +870,10 @@ body[data-sidebar-size="sm"]
   height: 20px;
 }
 
+body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li a{
+  border-radius: 8px !important;
+}
+
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > a {
   position: relative;
   width: calc(190px + 70px);
@@ -887,14 +891,16 @@ body[data-sidebar-size="sm"]
   > li:hover
   > a
   span {
-  display: inline;
+  opacity: 1;
 }
 
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > ul {
   display: block;
+  top: 55px;
+  border-radius: 4px;
   left: 70px;
   position: absolute;
-  width: 190px;
+  width: 195px;
   height: auto !important;
   -webkit-box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
   box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
@@ -975,7 +981,8 @@ body[data-sidebar-size="sm"]
   a {
   -webkit-box-shadow: none;
   box-shadow: none;
-  padding: 8px 20px;
+  padding: 8px 18px;
+  margin: 5px 9px 5px 6px !important;
   position: relative;
   width: 180px;
   z-index: 6;
@@ -988,8 +995,21 @@ body[data-sidebar-size="sm"]
   > ul
   > li:hover
   > ul
-  a:hover {
-  color: #383c40;
+  .sub-menu {
+    width: 194px;
+    border-radius: 4px;
+}
+
+body[data-sidebar-size="sm"]
+  .vertical-menu
+  #sidebar-menu
+  > ul
+  > li:hover
+  > ul
+  .sub-menu
+  a {
+    padding: 8px 18px;
+    margin: 5px 9px 5px 6px !important;
 }
 
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul ul {
