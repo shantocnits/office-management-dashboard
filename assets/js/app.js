@@ -6,52 +6,7 @@
     s,
     n = localStorage.getItem("language"),
     o = "en";
-  function l(e) {
-    document.getElementsByClassName("header-lang-img").forEach(function (t) {
-      if (t) {
-        switch (e) {
-          case "eng":
-            t.src = "assets/images/flags/us.jpg";
-            break;
-          case "sp":
-            t.src = "assets/images/flags/spain.jpg";
-            break;
-          case "gr":
-            t.src = "assets/images/flags/germany.jpg";
-            break;
-          case "it":
-            t.src = "assets/images/flags/italy.jpg";
-            break;
-          case "ru":
-            t.src = "assets/images/flags/russia.jpg";
-            break;
-          default:
-            t.src = "assets/images/flags/us.jpg";
-        }
-        localStorage.setItem("language", e),
-          (n = localStorage.getItem("language")),
-          (function () {
-            null == n && l(o);
-            var t = new XMLHttpRequest();
-            t.open("GET", "/assets/lang/" + n + ".json"),
-              (t.onreadystatechange = function () {
-                var a;
-                4 === this.readyState &&
-                  200 === this.status &&
-                  ((a = JSON.parse(this.responseText)),
-                  Object.keys(a).forEach(function (e) {
-                    document
-                      .querySelectorAll("[data-key='" + e + "']")
-                      .forEach(function (t) {
-                        t.textContent = a[e];
-                      });
-                  }));
-              }),
-              t.send();
-          })();
-      }
-    });
-  }
+  
   function r() {
     var t = document.querySelectorAll(".counter-value");
     t &&
@@ -67,25 +22,7 @@
         })();
       });
   }
-  function i() {
-    setTimeout(function () {
-      var t,
-        e,
-        a,
-        s = document.getElementById("side-menu");
-      s &&
-        ((t = s.querySelector(".mm-active .active")),
-        300 < (e = t ? t.offsetTop : 0) &&
-          ((e -= 100),
-          (a = document.getElementsByClassName("vertical-menu")
-            ? document.getElementsByClassName("vertical-menu")[0]
-            : "") &&
-            a.querySelector(".simplebar-content-wrapper") &&
-            setTimeout(function () {
-              a.querySelector(".simplebar-content-wrapper").scrollTop = e;
-            }, 0)));
-    }, 0);
-  }
+  
   function d() {
     for (
       var t = document
@@ -280,28 +217,7 @@
                   (o.classList.add("active"),
                   (l = o.parentElement) && l.classList.add("active"))))));
       }),
-    (e = document.querySelector('[data-toggle="fullscreen"]')) &&
-      e.addEventListener("click", function (t) {
-        t.preventDefault(),
-          document.body.classList.toggle("fullscreen-enable"),
-          document.fullscreenElement ||
-          document.mozFullScreenElement ||
-          document.webkitFullscreenElement
-            ? document.cancelFullScreen
-              ? document.cancelFullScreen()
-              : document.mozCancelFullScreen
-              ? document.mozCancelFullScreen()
-              : document.webkitCancelFullScreen &&
-                document.webkitCancelFullScreen()
-            : document.documentElement.requestFullscreen
-            ? document.documentElement.requestFullscreen()
-            : document.documentElement.mozRequestFullScreen
-            ? document.documentElement.mozRequestFullScreen()
-            : document.documentElement.webkitRequestFullscreen &&
-              document.documentElement.webkitRequestFullscreen(
-                Element.ALLOW_KEYBOARD_INPUT
-              );
-      }),
+    
     document.addEventListener("fullscreenchange", b),
     document.addEventListener("webkitfullscreenchange", b),
     document.addEventListener("mozfullscreenchange", b),
@@ -400,54 +316,8 @@
         "dark" == a.getAttribute("data-sidebar")
       ? m("sidebar-color-dark")
       : m("sidebar-color-light"),
-    document.getElementsByTagName("html")[0].hasAttribute("dir") &&
-    "rtl" == document.getElementsByTagName("html")[0].getAttribute("dir")
-      ? m("layout-direction-rtl")
-      : m("layout-direction-ltr"),
-    document.querySelectorAll("input[name='layout'").forEach(function (t) {
-      t.addEventListener("change", function (t) {
-        t && t.target && "vertical" == t.target.value
-          ? (m("layout-vertical"),
-            m("topbar-color-light"),
-            document.body.setAttribute("data-layout", "vertical"),
-            document.body.setAttribute("data-sidebar", "dark"),
-            document.body.setAttribute("data-topbar", "light"),
-            (document.getElementsByClassName(
-              "isvertical-topbar"
-            )[0].style.display = "block"),
-            (document.getElementsByClassName(
-              "ishorizontal-topbar"
-            )[0].style.display = "none"),
-            (document.getElementsByClassName("vertical-menu")[0].style.display =
-              "block"),
-            (document.getElementById("sidebar-setting").style.display =
-              "block"),
-            (document.getElementsByClassName("topnav")[0].style.display =
-              "none"),
-            window.innerWidth <= 992 &&
-              document
-                .getElementsByClassName("vertical-menu")[0]
-                .removeAttribute("style"))
-          : (m("layout-horizontal"),
-            m("topbar-color-dark"),
-            document.body.setAttribute("data-topbar", "dark"),
-            document.body.setAttribute("data-layout", "horizontal"),
-            document.body.removeAttribute("data-sidebar"),
-            (document.getElementById("sidebar-setting").style.display = "none"),
-            (document.getElementsByClassName("vertical-menu")[0].style.display =
-              "none"),
-            (document.getElementsByClassName(
-              "ishorizontal-topbar"
-            )[0].style.display = "block"),
-            (document.getElementsByClassName(
-              "isvertical-topbar"
-            )[0].style.display = "none"),
-            (document.getElementsByClassName("topnav")[0].style.display =
-              "block"),
-            (document.getElementsByClassName("footer")[0].style.display =
-              "block"));
-      });
-    }),
+    
+
     document
       .querySelectorAll("input[name='layout-mode']")
       .forEach(function (t) {
@@ -474,37 +344,6 @@
                 m("sidebar-color-dark")));
         });
       }),
-    document
-      .querySelectorAll("input[name='layout-direction']")
-      .forEach(function (t) {
-        t.addEventListener("change", function (t) {
-          t &&
-            t.target &&
-            t.target.value &&
-            ("ltr" == t.target.value
-              ? (document
-                  .getElementsByTagName("html")[0]
-                  .removeAttribute("dir"),
-                document
-                  .getElementById("bootstrap-style")
-                  .setAttribute("href", "assets/css/bootstrap.min.css"),
-                document
-                  .getElementById("app-style")
-                  .setAttribute("href", "assets/css/app.min.css"),
-                sessionStorage.setItem("is_visited", "layout-direction-ltr"))
-              : (document
-                  .getElementById("bootstrap-style")
-                  .setAttribute("href", "assets/css/bootstrap-rtl.min.css"),
-                document
-                  .getElementById("app-style")
-                  .setAttribute("href", "assets/css/app-rtl.min.css"),
-                document
-                  .getElementsByTagName("html")[0]
-                  .setAttribute("dir", "rtl"),
-                sessionStorage.setItem("is_visited", "layout-direction-rtl")));
-        });
-      }),
-    i(),
     (s = document.getElementById("checkAll")) &&
       (s.onclick = function () {
         for (
@@ -518,3 +357,234 @@
           t[e].checked = this.checked;
       });
 })();
+
+
+
+
+
+
+
+// sub menu////
+
+
+!(function (t, e) {
+  "object" == typeof exports && "undefined" != typeof module
+    ? (module.exports = e())
+    : "function" == typeof define && define.amd
+    ? define(e)
+    : ((t = t || self).MetisMenu = e());
+})(this, function () {
+  "use strict";
+  var i = function () {
+      return (i =
+        Object.assign ||
+        function (t) {
+          for (var e, i = 1, n = arguments.length; i < n; i++)
+            for (var s in (e = arguments[i]))
+              Object.prototype.hasOwnProperty.call(e, s) && (t[s] = e[s]);
+          return t;
+        }).apply(this, arguments);
+    },
+    n = { parentTrigger: "li", subMenu: "ul", toggle: !0, triggerElement: "a" },
+    g = "mm-active",
+    f = "mm-collapse",
+    m = "mm-collapsed",
+    p = "mm-collapsing",
+    t = "metismenu",
+    v = "mm-show";
+  function y(t, e) {
+    if (t.closest) return t.closest(e);
+    for (var i, n, s = t; s; ) {
+      if (
+        ((n = e),
+        (
+          (i = s).matches ||
+          i.webkitMatchesSelector ||
+          i.msMatchesSelector
+        ).call(i, n))
+      )
+        return s;
+      s = s.parentElement;
+    }
+    return null;
+  }
+  function s(t, e) {
+    (this.element = s.isElement(t) ? t : document.querySelector(t)),
+      (this.config = i(i({}, n), e)),
+      (this.disposed = !1),
+      (this.triggerArr = []),
+      this.init();
+  }
+  return (
+    (s.attach = function (t, e) {
+      return new s(t, e);
+    }),
+    (s.prototype.init = function () {
+      var n = this,
+        s = g,
+        r = f;
+      this.element.classList.add(t),
+        [].slice
+          .call(this.element.querySelectorAll(this.config.subMenu))
+          .forEach(function (t) {
+            t.classList.add(r);
+            var e = y(t, n.config.parentTrigger);
+            null != e && e.classList.contains(s) ? n.show(t) : n.hide(t);
+            var i =
+              null == e ? void 0 : e.querySelector(n.config.triggerElement);
+            "true" !== (null == i ? void 0 : i.getAttribute("aria-disabled")) &&
+              (null != i && i.setAttribute("aria-expanded", "false"),
+              null != i && i.addEventListener("click", n.clickEvent.bind(n)),
+              n.triggerArr.push(i));
+          });
+    }),
+    (s.prototype.clickEvent = function (t) {
+      var e, i, n;
+      this.disposed ||
+        ((e = null == t ? void 0 : t.currentTarget) &&
+          "A" === e.tagName &&
+          t.preventDefault(),
+        (n =
+          null == (i = y(e, this.config.parentTrigger))
+            ? void 0
+            : i.querySelector(this.config.subMenu)),
+        this.toggle(n));
+    }),
+    (s.prototype.update = function () {
+      (this.disposed = !1), this.init();
+    }),
+    (s.prototype.dispose = function () {
+      var e = this;
+      this.triggerArr.forEach(function (t) {
+        t.removeEventListener("click", e.clickEvent.bind(e));
+      }),
+        (this.disposed = !0);
+    }),
+    (s.prototype.on = function (t, e, i) {
+      return this.element.addEventListener(t, e, i), this;
+    }),
+    (s.prototype.off = function (t, e, i) {
+      return this.element.removeEventListener(t, e, i), this;
+    }),
+    (s.prototype.emit = function (t, e, i) {
+      var n;
+      return (
+        void 0 === i && (i = !1),
+        "function" == typeof CustomEvent
+          ? (n = new CustomEvent(t, { bubbles: i, detail: e }))
+          : (n = document.createEvent("CustomEvent")).initCustomEvent(
+              t,
+              i,
+              !1,
+              e
+            ),
+        this.element.dispatchEvent(n),
+        this
+      );
+    }),
+    (s.prototype.toggle = function (t) {
+      var e = y(t, this.config.parentTrigger);
+      null != e && e.classList.contains(g) ? this.hide(t) : this.show(t);
+    }),
+    (s.prototype.show = function (t) {
+      var e,
+        i,
+        n,
+        s,
+        r,
+        o = this,
+        l = t,
+        a = g,
+        c = f,
+        u = m,
+        h = p,
+        d = v;
+      this.isTransitioning ||
+        l.classList.contains(h) ||
+        ((i = function () {
+          l.classList.remove(h),
+            (l.style.height = ""),
+            l.removeEventListener("transitionend", i),
+            o.setTransitioning(!1),
+            o.emit("shown.metisMenu", { shownElement: l });
+        }),
+        null != (n = y(l, this.config.parentTrigger)) && n.classList.add(a),
+        null !=
+          (s =
+            null == n ? void 0 : n.querySelector(this.config.triggerElement)) &&
+          s.setAttribute("aria-expanded", "true"),
+        null != s && s.classList.remove(u),
+        (l.style.height = "0px"),
+        l.classList.remove(c),
+        l.classList.remove(d),
+        l.classList.add(h),
+        (r = [].slice
+          .call(
+            null === (e = null == n ? void 0 : n.parentNode) || void 0 === e
+              ? void 0
+              : e.children
+          )
+          .filter(function (t) {
+            return t !== n;
+          })),
+        this.config.toggle &&
+          0 < r.length &&
+          r.forEach(function (t) {
+            var e = t.querySelector(o.config.subMenu);
+            e && o.hide(e);
+          }),
+        this.setTransitioning(!0),
+        l.classList.add(c),
+        l.classList.add(d),
+        (l.style.height = l.scrollHeight + "px"),
+        this.emit("show.metisMenu", { showElement: l }),
+        l.addEventListener("transitionend", i));
+    }),
+    (s.prototype.hide = function (t) {
+      var e,
+        i,
+        n,
+        s = this,
+        r = g,
+        o = f,
+        l = m,
+        a = p,
+        c = v,
+        u = t;
+      !this.isTransitioning &&
+        u.classList.contains(c) &&
+        (this.emit("hide.metisMenu", { hideElement: u }),
+        null != (e = y(u, this.config.parentTrigger)) && e.classList.remove(r),
+        (i = function () {
+          u.classList.remove(a),
+            u.classList.add(o),
+            (u.style.height = ""),
+            u.removeEventListener("transitionend", i),
+            s.setTransitioning(!1),
+            s.emit("hidden.metisMenu", { hiddenElement: u });
+        }),
+        (u.style.height = u.getBoundingClientRect().height + "px"),
+        (u.style.height = u.offsetHeight + "px"),
+        u.classList.add(a),
+        u.classList.remove(o),
+        u.classList.remove(c),
+        this.setTransitioning(!0),
+        u.addEventListener("transitionend", i),
+        (u.style.height = "0px"),
+        null !=
+          (n =
+            null == e ? void 0 : e.querySelector(this.config.triggerElement)) &&
+          n.setAttribute("aria-expanded", "false"),
+        null != n && n.classList.add(l));
+    }),
+    (s.prototype.setTransitioning = function (t) {
+      this.isTransitioning = t;
+    }),
+    (s.isElement = function (t) {
+      return Boolean(t.classList);
+    }),
+    s
+  );
+});
+//# submenu
+

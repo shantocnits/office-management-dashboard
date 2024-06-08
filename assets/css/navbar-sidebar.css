@@ -131,7 +131,7 @@ body:not([data-sidebar-size="sm"]) .search-bar-box input {
 }
 
 .logo {
-  line-height: 70px;
+  line-height: 69px;
 }
 
 .logo .logo-sm {
@@ -429,37 +429,32 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   box-sizing: border-box;
   cursor: pointer;
   height: 40px;
-  width: 100px;
+  width: 50px;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0);
-  margin-top: 20px;
-}
-
-.light-mode-button:focus {
-  outline: none; /* Not ideal for accessibility */
+  margin: 7.52px 12px;
 }
 
 .light-mode-button span:nth-child(1) {
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
-  width: 100px;
-  height: 40px;
+  width: 50px;
+  height: 25px;
   border-radius: 20px;
-  background-color: #d6d7db;
-  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  background-color: var(--background) !important;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.13);
   transition: 0.3s;
 }
 
 .light-mode-button span:nth-child(2) {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
+  top: 9.8px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
   transition: 0.3s;
 }
 
@@ -1765,7 +1760,7 @@ body[data-sidebar="light"] .navbar-brand-box {
 }
 
 body[data-sidebar="light"] .logo {
-  line-height: 70px;
+  line-height: 69px;
 }
 
 body[data-sidebar="light"] .logo .logo-sm {

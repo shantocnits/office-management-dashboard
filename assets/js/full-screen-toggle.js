@@ -41,7 +41,6 @@ if(document.fullscreenEnabled || document.webkitFullscreenEnabled) {
 
 // dark mode start
 
-
 function toggle_light_mode() {
     var app = document.getElementsByTagName("BODY")[0];
     if (localStorage.lightMode == "dark") {
