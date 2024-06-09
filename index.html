@@ -126,7 +126,7 @@
           <div class="dropdown d-inline-block">
             <button
               type="button"
-              class="btn header-item search-icon"
+              class="btn header-item search-icon "
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
@@ -232,10 +232,11 @@
           <div class="dropdown d-inline-block">
             <button
               type="button"
-              class="btn header-item noti-icon right-bar-toggle"
+              class="btn header-item noti-icon right-bar-toggle notification-icon"
               id="right-bar-toggle-v"
             >
               <svg
+                class="topbar-setting"
                 width="30"
                 height="30"
                 viewBox="0 0 32 32"
@@ -265,7 +266,7 @@
           <div class="dropdown d-inline-block language-switch">
             <button
               type="button"
-              class="btn header-item"
+              class="btn header-item language-switch-icon"
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
@@ -388,7 +389,7 @@
               <span class="noti-dot"></span>
             </button>
             <div
-              class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0"
+              class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0 page-header-notifications-dropdown-v"
               aria-labelledby="page-header-notifications-dropdown-v"
             >
               <div class="p-3">
@@ -524,12 +525,12 @@
                 alt="Header Avatar"
               />
             </button>
-            <div class="dropdown-menu dropdown-menu-end pt-0">
+            <div class="dropdown-menu dropdown-menu-end pt-0 profile-dropdown">
               <div class="p-3 border-bottom">
                 <h6 class="mb-0">Martin Gurley</h6>
-                <p class="mb-0 font-size-11 text-muted">
+                <a href="# " class="mb-0 font-size-11 text-muted">
                   martin.gurley@email.com
-                </p>
+                </a>
               </div>
               <a class="dropdown-item" href="contacts-profile.html"
                 ><i
@@ -1840,19 +1841,6 @@
                 >Dark</label
               >
             </div>
-            <div class="form-check sidebar-setting mt-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="sidebar-color"
-                id="sidebar-color-brand"
-                value="brand"
-                onchange="document.body.setAttribute('data-sidebar', 'brand')"
-              />
-              <label class="form-check-label" for="sidebar-color-brand"
-                >Brand</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -1877,12 +1865,16 @@
             />
           </span>
           <span class="logo-lg">
-            <img
-              src="assets/icons/sidebar-logo.svg"
-              alt=""
-              width="38"
-              height="38"
-            />
+            <svg width="39" height="45" viewBox="0 0 39 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.5 2.3094L36.9856 12.4047V32.5953L19.5 42.6906L2.01443 32.5953L2.01443 12.4047L19.5 2.3094Z" stroke="url(#paint0_linear_868_2)" stroke-width="4"/>
+              <defs>
+              <linearGradient id="paint0_linear_868_2" x1="7.58823" y1="2.64706" x2="30.0882" y2="39.7059" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#AF2222"/>
+              <stop offset="1" stop-color="#192045"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              
             <span class="brand-name">Octa</span>
           </span>
         </a>
