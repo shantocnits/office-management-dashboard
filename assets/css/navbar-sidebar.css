@@ -18,6 +18,7 @@
   --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 17%);
   --dark-mode-bg: #292731;
   --dark-mode-text: #c0c5cb;
+  --content-and-hover-bg: #414141;
 }
 
 * {
@@ -85,10 +86,8 @@ label {
   right: 0;
   left: 260px;
   z-index: 1005;
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 3px #eae7f3;
-  box-shadow: 0 2px 3px #eae7f3;
-  -webkit-transition: all 0.3s;
+  background-color: var(--white);
+  box-shadow: 0 2px 3px rgb(226, 226, 226);
   transition: all 0.5s;
 }
 
@@ -120,9 +119,7 @@ label {
   position: fixed;
   padding-left: 28px;
   z-index: 1;
-  background-color: var(--white);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.2s ease !important;
 }
 
 .logo {
@@ -132,6 +129,7 @@ label {
 .logo .logo-sm {
   display: none;
 }
+
 .logo .logo-sm2 {
   display: none;
 }
@@ -141,7 +139,7 @@ label {
 }
 
 .search-bar-box {
-  border: 1px solid var(--stroke);
+  border: 1px solid #af2222;
   margin: 14px 0;
   border-radius: 8px;
   width: 350px;
@@ -159,20 +157,19 @@ label {
   height: 100%;
   border-radius: 8px;
   border: none;
-  color: #ffa5a5 !important;
+  color: var(--text-color) !important;
   background: none;
   font-size: 16px;
 }
 
 .search-bar-box input::placeholder {
-  color: #ffa5a5 !important;
+  color: var(--text-color) !important;
 }
 
 .header-item {
   height: 70px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  fill: #555b6d;
   border: 0;
   border-radius: 0;
 }
@@ -180,7 +177,7 @@ label {
 .header-profile-user {
   height: 42px;
   width: 42px;
-  border: 1px solid #e9ebed;
+  border: 1px solid var(--gray);
 }
 
 .noti-icon {
@@ -193,22 +190,22 @@ label {
   right: 14px;
   height: 10px;
   width: 10px;
-  color: #fff;
+  color: var(--white);
   line-height: 14px;
   font-weight: 500;
   font-size: 10px;
   border-radius: 50% !important;
-  background: #ff2929;
-  box-shadow: 0px 0px 10px 0px #ff2929;
+  background: var(--text-color2);
+  box-shadow: 0px 0px 10px 0px var(--text-color2);
 }
 
 .notification-item .d-flex {
   padding: 1rem;
-  border-bottom: 1px solid #eff0f2;
+  border-bottom: 1px solid var(--gray);
 }
 
 .notification-item .d-flex:hover {
-  background-color: #fbfafd;
+  background-color: var(--dark-mode-text);
 }
 
 body[data-topbar="hidden"] .isvertical-topbar {
@@ -216,7 +213,7 @@ body[data-topbar="hidden"] .isvertical-topbar {
 }
 
 .right-bar {
-  background-color: #fff;
+  background: var(--white);
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06),
     0 1px 0 0 rgba(0, 0, 0, 0.02);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
@@ -233,11 +230,11 @@ body[data-topbar="hidden"] .isvertical-topbar {
 }
 
 .right-bar .right-bar-toggle-close {
-  background-color: #2a2738;
+  background-color: var(--dark-mode-bg);
   height: 24px;
   width: 24px;
   line-height: 24px;
-  color: #f6f5fa;
+  color: var(--white);
   text-align: center;
   border-radius: 50%;
 }
@@ -272,9 +269,6 @@ body[data-sidebar-size="sm"] .navbar-brand-box {
   padding-left: 0;
   text-align: center;
 }
-/* body[data-sidebar-size="sm"] .vertical-menu .path-roted  ssss{
-  transform: rotateY(180deg) !important;
-} */
 
 body[data-sidebar-size="sm"] .logo span.logo-lg {
   display: none;
@@ -286,9 +280,6 @@ body[data-sidebar-size="sm"] .logo span.logo-sm {
 body[data-sidebar-size="sm"] .logo span.logo-sm2 {
   display: block;
 }
-/* body[data-sidebar-size="sm"] .logo span.logo-sm2 svg path {
-  stroke: stroke="url(#paint0_linear_868_2)";
-} */
 
 body[data-sidebar-size="sm"] #page-topbar {
   left: 70px;
@@ -347,7 +338,7 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   -ms-flex-align: center;
   align-items: center;
   background-color: #5052ba;
-  color: #fff;
+  color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +361,7 @@ body[data-sidebar-size="md"] .navbar-brand-box {
 
 .avatar-group .avatar-group-item {
   margin-left: -8px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   border-radius: 50%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -397,6 +388,11 @@ body[data-sidebar-size="md"] .navbar-brand-box {
 .search-box .rounded {
   background: var(--background) !important;
   color: var(--background) !important;
+}
+
+.isvertical-topbar .vertical-menu-btn i {
+  color: var(--text-color);
+  font-size: 20px !important;
 }
 
 /* Full Screen Start */
@@ -426,75 +422,15 @@ body[data-sidebar-size="md"] .navbar-brand-box {
   display: none;
 }
 
-/* Light & Dark Mode Toggle button */
-
-.light-mode-button {
-  background: 0;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 40px;
-  width: 50px;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0);
-  margin: 7.52px 12px;
-}
-
-.light-mode-button span:nth-child(1) {
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 50px;
-  height: 25px;
-  border-radius: 20px;
-  background-color: var(--background) !important;
-  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.13);
-  transition: 0.3s;
-}
-
-.light-mode-button span:nth-child(2) {
-  position: absolute;
-  top: 9.8px;
-  left: 3px;
-  width: 19px;
-  height: 19px;
-  background-color: #fff;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-body {
-  background-color: #f6f6f6;
-  transition: background-color 0.3s;
-}
-
-body[light-mode="dark"] {
-  background-color: #141516;
-  color: #ced4e2;
-}
-
-body[light-mode="dark"] .light-mode-button span:nth-child(1) {
-  background-color: #ced4e2;
-  color: #141516;
-}
-
-body[light-mode="dark"] .light-mode-button span:nth-child(2) {
-  left: 28px;
-  background-color: #141516;
-}
-
-body[light-mode="dark"] a {
-  color: var(--white);
-}
-/* Light & Dark Mode Toggle button */
-
 @media (max-width: 992px) {
   .vertical-menu .navbar-brand-box {
     display: none;
   }
+
   .vertical-menu .vertical-menu-btn {
     display: none;
   }
+
   body[data-sidebar-size="md"] #page-topbar {
     left: 0;
   }
@@ -553,18 +489,23 @@ body[light-mode="dark"] a {
     .navbar-brand-box {
     background-color: var(--dark-mode-bg);
   }
+
   .search-bar-box {
     display: none !important;
   }
+
   .right-bar-toggle {
     display: none;
   }
+
   .language-switch {
     display: none !important;
   }
+
   .search-icon {
     display: block;
   }
+
   .toggle-full-screen {
     display: none !important;
   }
@@ -605,9 +546,9 @@ body[light-mode="dark"] a {
   }
 }
 
-/* Navbar End */
+/*....... Navbar End......... */
 
-/* Sidebar Start */
+/* .....Sidebar Start..... */
 .metismenu {
   margin: 0;
 }
@@ -657,19 +598,22 @@ body[light-mode="dark"] a {
 }
 
 .vertical-menu .vertical-menu-btn {
+  font-size: 20px !important;
   position: absolute;
   right: -27px;
-  top: 0;
+  top: 3px;
   z-index: 2;
+  color: var(--text-color2);
 }
 
 .sidebar-menu-scroll {
-  height: calc(100% - calc(70px + 26px));
+  position: relative;
+  height: 100vh;
   margin-top: 70px;
 }
 
 #sidebar-menu {
-  padding: 0 0 30px 0;
+  height: calc(100vh - 340px);
 }
 
 #sidebar-menu .has-arrow:after {
@@ -717,23 +661,10 @@ body[light-mode="dark"] a {
   padding: 10px;
 }
 
-#sidebar-menu ul li a .nav-icon {
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  min-width: 1.5rem;
-  vertical-align: middle;
-  color: #645e7a;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  top: 0;
-  font-size: 1.3rem;
-  line-height: 1.40625rem;
-}
-
 #sidebar-menu ul li .badge {
   margin-left: auto;
 }
+
 #sidebar-menu ul li ul.sub-menu {
   position: relative;
 }
@@ -1011,7 +942,7 @@ body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul ul {
   padding: 5px 0;
   z-index: 9999;
   display: none;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 body[data-sidebar-size="sm"]
@@ -1127,9 +1058,11 @@ body[data-layout-mode="bordered"] .vertical-menu {
 .help-box {
   border-radius: 0.6rem;
   padding: 20px;
-  margin: 90px 16px 0px;
-  position: relative;
-  background-color: #302e3a;
+  margin: 66px 16px 0px;
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+  background-color: #343142;
 }
 
 .help-box img {
@@ -1225,7 +1158,7 @@ body[data-layout-mode="bordered"] .vertical-menu {
 .simplebar-scrollbar:before {
   position: absolute;
   content: "";
-  background: #a2adb7;
+  background: var(--gray);
   border-radius: 7px;
   left: 0;
   right: 0;
@@ -1248,6 +1181,14 @@ body[data-layout-mode="bordered"] .vertical-menu {
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   top: 2px;
   bottom: 2px;
+}
+
+.vertical-menu-btn i {
+  transition: 0.4s !important;
+}
+
+body[data-sidebar-size="lg"] .vertical-menu-btn i {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 992px) {
@@ -1274,14 +1215,17 @@ body[data-layout-mode="bordered"] .vertical-menu {
   }
 
   body.sidebar-enable .simplebar-content {
-    overflow-y: hidden !important;
-    margin-bottom: 85px;
+    overflow-y: scroll !important;
+  }
+
+  .help-box {
+    bottom: 86px;
   }
 }
 
 /* SideBar End */
 
-/*Rightbar Dark Mode All Color Start */
+/* ..................Rightbar SETTING Dark Mode All Color Start...................... */
 
 body[data-topbar="dark"] .ishorizontal-topbar,
 body[data-topbar="dark"] .isvertical-topbar {
@@ -1291,12 +1235,15 @@ body[data-topbar="dark"] .isvertical-topbar {
 body[data-topbar="dark"] .vertical-menu-btn2 {
   color: var(--text-color) !important;
 }
+
+body[data-topbar="dark"] .logo-sm2,
 body[data-topbar="dark"] .header-item {
-  color: var(--white);
+  color: #af2222;
 }
+
 body[data-topbar="dark"] .light-mode-button span:nth-child(1) {
   background-color: #ced4e2;
-  color: #141516;
+  color: var(--text-color);
 }
 
 body[data-topbar="dark"] .light-mode-button span:nth-child(2) {
@@ -1314,6 +1261,7 @@ body[data-topbar="dark"] .header-profile-user {
 body[data-topbar="dark"] #right-bar-toggle-v svg path {
   stroke: var(--white);
 }
+
 body[data-topbar="dark"] #page-header-notifications-dropdown-v svg path,
 body[data-topbar="dark"] .language-switch-icon svg path,
 body[data-topbar="dark"] .nav-src-btn svg path,
@@ -1321,6 +1269,7 @@ body[data-topbar="dark"] .search-icon svg path,
 body[data-topbar="dark"] .toggle-fullscreen-btn svg path {
   fill: var(--white) !important;
 }
+
 body[data-topbar="dark"] .search-bar-box input,
 body[data-topbar="dark"] .search-bar-box input::placeholder,
 body[data-topbar="dark"] .search-bar-box {
@@ -1339,29 +1288,40 @@ body[data-topbar="dark"] .m-0,
 body[data-topbar="dark"] .small {
   color: var(--white) !important;
 }
+
 body[data-topbar="dark"] .text-reset .d-flex:hover {
-  background: #414141 !important;
+  background: var(--content-and-hover-bg) !important;
 }
+
 body[data-topbar="dark"] .page-header-notifications-dropdown-v {
   background: var(--dark-mode-bg) !important;
 }
+
 body[data-topbar="dark"] .language-switch .dropdown-menu-end .language,
 body[data-topbar="dark"] .language-switch .dropdown-menu-end {
   background: var(--dark-mode-bg) !important;
   color: var(--white) !important;
 }
+
 body[data-topbar="dark"] .language-switch .dropdown-menu-end .language:hover {
-  background: #414141 !important;
+  background: var(--content-and-hover-bg) !important;
 }
+
 body[data-topbar="dark"] .profile-dropdown {
   background: var(--dark-mode-bg) !important;
 }
+
 body[data-topbar="dark"] .profile-dropdown .dropdown-item {
   color: var(--white) !important;
 }
+
 body[data-topbar="dark"] .profile-dropdown .dropdown-item:hover {
-  background: #414141 !important;
+  background: var(--content-and-hover-bg) !important;
   color: var(--white) !important;
+}
+
+body[data-topbar="dark"] .header-item i {
+  color: var(--text-color2) !important;
 }
 
 /* ............sidebar.................... */
@@ -1406,7 +1366,7 @@ body[data-sidebar="dark"] .sidebar-menu-scroll svg rect {
 }
 
 body[data-sidebar="dark"] #sidebar-menu ul li.mm-active > a {
-  background: #414141 !important;
+  background: var(--content-and-hover-bg) !important;
 }
 
 body[data-sidebar="dark"] #sidebar-menu ul .sub-menu li:hover .has-arrow:after,
@@ -1415,7 +1375,7 @@ body[data-sidebar="dark"] #sidebar-menu ul li.mm-active > .has-arrow:after {
 }
 
 body[data-sidebar="dark"] .vertical-menu #sidebar-menu > ul > li:hover > a {
-  background: #414141;
+  background: var(--content-and-hover-bg) !important;
 }
 
 body[data-sidebar="dark"] .vertical-menu #sidebar-menu > ul ul li:hover > ul {
@@ -1423,7 +1383,7 @@ body[data-sidebar="dark"] .vertical-menu #sidebar-menu > ul ul li:hover > ul {
 }
 
 body[data-sidebar="dark"] .vertical-menu #sidebar-menu > ul li a:hover {
-  background: #414141 !important;
+  background: var(--content-and-hover-bg) !important;
 }
 
 body[data-sidebar="dark"] .vertical-menu #sidebar-menu > ul li:hover .sub-menu {
@@ -1468,7 +1428,24 @@ body[data-sidebar="dark"] .vertical-menu .vertical-menu-btn {
   color: var(--white) !important;
 }
 
+body[data-sidebar="dark"] .header-item i {
+  color: var(--text-color2) !important;
+}
+
 /* ........Layout mode......... */
+
+body[data-layout-mode="dark"] .page-content {
+  background: black !important;
+}
+
+body[data-layout-mode="dark"] .ishorizontal-topbar,
+body[data-layout-mode="dark"] .isvertical-topbar {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.39);
+}
+
+body[data-layout-mode="dark"] .header-item i {
+  color: var(--white) !important;
+}
 
 body[data-layout-mode="dark"] .logo-lg svg path {
   stroke: white !important;
@@ -1482,3 +1459,279 @@ body[data-layout-mode="dark"] .right-bar {
   background: var(--dark-mode-bg) !important;
   color: var(--white) !important;
 }
+
+/* .............Rightbar SETTING Dark Mode All Color END ...................*/
+
+/* ....Light & Dark Mode Toggle button...... */
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin: 7.52px 12px;
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: var(--background) !important;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.13);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 9.8px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Toggle button Dark Mode Start  */
+body {
+  background-color: #fff3f3;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: black;
+  color: var(--white);
+}
+
+body[light-mode="dark"] .ishorizontal-topbar,
+body[light-mode="dark"] .isvertical-topbar {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.39);
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 28px;
+  background-color: var(--text-color);
+}
+
+body[light-mode="dark"] .ishorizontal-topbar,
+body[light-mode="dark"] .isvertical-topbar {
+  background-color: var(--dark-mode-bg);
+}
+
+body[light-mode="dark"] .vertical-menu-btn2 {
+  color: var(--text-color) !important;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: var(--white);
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  background-color: var(--text-color);
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background: var(--white) !important;
+}
+
+body[light-mode="dark"] .header-profile-user {
+  border-color: var(--gray);
+}
+
+body[light-mode="dark"] #right-bar-toggle-v svg path {
+  stroke: var(--white);
+}
+
+body[light-mode="dark"] #page-header-notifications-dropdown-v svg path,
+body[light-mode="dark"] .language-switch-icon svg path,
+body[light-mode="dark"] .nav-src-btn svg path,
+body[light-mode="dark"] .search-icon svg path,
+body[light-mode="dark"] .toggle-fullscreen-btn svg path {
+  fill: var(--white) !important;
+}
+
+body[light-mode="dark"] .search-bar-box input,
+body[light-mode="dark"] .search-bar-box input::placeholder,
+body[light-mode="dark"] .search-bar-box {
+  border-color: var(--white);
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .topbar-setting svg path {
+  stroke: var(--white) !important;
+}
+
+body[light-mode="dark"] .p-2 span,
+body[light-mode="dark"] .mb-1,
+body[light-mode="dark"] .mb-0,
+body[light-mode="dark"] .m-0,
+body[light-mode="dark"] .small {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .text-reset .d-flex:hover {
+  background: var(--content-and-hover-bg) !important;
+}
+
+body[light-mode="dark"] .page-header-notifications-dropdown-v {
+  background: var(--dark-mode-bg) !important;
+}
+
+body[light-mode="dark"] .language-switch .dropdown-menu-end .language,
+body[light-mode="dark"] .language-switch .dropdown-menu-end {
+  background: var(--dark-mode-bg) !important;
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .language-switch .dropdown-menu-end .language:hover {
+  background: var(--content-and-hover-bg) !important;
+}
+
+body[light-mode="dark"] .profile-dropdown {
+  background: var(--dark-mode-bg) !important;
+}
+
+body[light-mode="dark"] .profile-dropdown .dropdown-item {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .profile-dropdown .dropdown-item:hover {
+  background: var(--content-and-hover-bg) !important;
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .header-item i {
+  color: var(--white) !important;
+}
+
+/* ..sidebar.. */
+
+body[light-mode="dark"] .navbar-brand-box {
+  background: var(--dark-mode-bg) !important;
+}
+
+body[light-mode="dark"] .logo-lg svg path {
+  stroke: white !important;
+}
+
+body[light-mode="dark"] .logo-sm2 svg path {
+  stroke: white !important;
+}
+
+body[light-mode="dark"] .navbar-brand-box .logo-dark {
+  display: block;
+}
+
+body[light-mode="dark"] .vertical-menu {
+  background: var(--dark-mode-bg);
+}
+
+body[light-mode="dark"] .vertical-menu a,
+body[light-mode="dark"] .vertical-menu span,
+body[light-mode="dark"] .vertical-menu h1,
+body[light-mode="dark"] .vertical-menu h2,
+body[light-mode="dark"] .vertical-menu h3,
+body[light-mode="dark"] .vertical-menu h4,
+body[light-mode="dark"] .vertical-menu h5,
+body[light-mode="dark"] .vertical-menu h6 {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .sidebar-menu-scroll svg path {
+  stroke: var(--white) !important;
+}
+
+body[light-mode="dark"] .sidebar-menu-scroll svg rect {
+  fill: var(--white) !important;
+}
+
+body[light-mode="dark"] #sidebar-menu ul li.mm-active > a {
+  background: var(--content-and-hover-bg) !important;
+}
+
+body[light-mode="dark"] #sidebar-menu ul .sub-menu li:hover .has-arrow:after,
+body[light-mode="dark"] #sidebar-menu ul li.mm-active > .has-arrow:after {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .vertical-menu #sidebar-menu > ul > li:hover > a {
+  background: var(--content-and-hover-bg) !important;
+}
+
+body[light-mode="dark"] .vertical-menu #sidebar-menu > ul ul li:hover > ul {
+  background: var(--dark-mode-bg) !important;
+}
+
+body[light-mode="dark"] .vertical-menu #sidebar-menu > ul li a:hover {
+  background: var(--content-and-hover-bg) !important;
+}
+
+body[light-mode="dark"] .vertical-menu #sidebar-menu > ul li:hover .sub-menu {
+  background: var(--dark-mode-bg) !important;
+}
+
+body[light-mode="dark"]
+  .vertical-menu
+  #sidebar-menu
+  > ul
+  li:hover
+  .sub-menu
+  .has-arrow::before {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"]
+  .vertical-menu
+  #sidebar-menu
+  ul
+  .sub-menu
+  li
+  .has-arrow:after {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"]
+  .vertical-menu
+  #sidebar-menu
+  ul
+  .sub-menu
+  li:hover
+  .has-arrow:after {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .vertical-menu .fa-circle:before {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .vertical-menu .vertical-menu-btn {
+  color: var(--white) !important;
+}
+
+body[light-mode="dark"] .logo-lg svg path {
+  stroke: white !important;
+}
+body[light-mode="dark"] .logo-sm2 svg path {
+  stroke: white !important;
+}
+
+body[light-mode="dark"] .right-bar h6,
+body[light-mode="dark"] .right-bar {
+  background: var(--dark-mode-bg) !important;
+  color: var(--white) !important;
+}
+
+/*  Toggle button Dark Mode End */
