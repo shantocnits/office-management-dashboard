@@ -1438,7 +1438,7 @@ body[data-sidebar="dark"] .header-item i {
 
 /* ........Layout mode......... */
 
-body[data-layout-mode="dark"] .page-content {
+body[data-layout-mode="dark"] .main-content {
   background: black !important;
 }
 
@@ -1464,7 +1464,7 @@ body[data-layout-mode="dark"] .right-bar {
   color: var(--white) !important;
 }
 
-/* .............Rightbar SETTING Dark Mode All Color END ...................*/
+/*....Rightbar SETTING Dark Mode All Color END ........*/
 
 /* ....Light & Dark Mode Toggle button...... */
 
