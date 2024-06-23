@@ -164,6 +164,7 @@ html ::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .bredcam span {
@@ -259,6 +260,7 @@ html ::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   padding: 0px 10px;
+  white-space: nowrap;
   margin-bottom: 4px;
   height: 36px;
   border-radius: 5px;
@@ -282,15 +284,20 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 0px !important;
   border: none !important;
   background: var(--white) !important;
+  
 }
+.file-export-item .dt-button svg path{
+  transition: 0.6s !important;
+}
+
 .file-export-item svg {
   width: 35px;
   height: 35px;
-  transition: 0.8s !important;
+ 
 }
 .file-export-item .dt-button svg:hover {
   fill: var(--text-color2) !important;
-  transition: 2s !important;
+  
 }
 .file-export-item .dt-button svg:hover rect {
   stroke: none !important;
@@ -360,6 +367,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 #example th {
+  white-space: nowrap;
   font-size: 18px;
   color: var(--text-color);
 }
@@ -385,7 +393,7 @@ table.dataTable thead .sorting_asc {
   background-image: url(../images/sort_asc.png) !important;
 }
 table.dataTable.display tbody tr > .sorting_1 {
-  background: var(--white) !important;
+  background: none !important;
 }
 
 #example th:nth-child(8).sorting {
@@ -523,13 +531,16 @@ table.dataTable.display tbody tr > .sorting_1 {
   height: 42px;
 }
 
+#example .edit svg path{
+  transition: 0.8s !important;
+}
+
 #example .edit svg:hover rect {
   fill: var(--text-color2) !important;
 }
 
 #example .edit svg:hover path {
   fill: var(--white) !important;
-  transition: 0.3s !important;
 }
 
 #example.dataTable {
@@ -537,6 +548,7 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example td {
+  white-space: nowrap;
   vertical-align: super !important;
   border-top: none !important;
   border-bottom: 1px solid rgb(245, 245, 245);
@@ -568,6 +580,7 @@ table.dataTable.display tbody tr > .sorting_1 {
   color: var(--text-color2);
   cursor: pointer;
   border-radius: 4px;
+  
 }
 
 .custom-pagination button.disabled {
@@ -580,11 +593,8 @@ table.dataTable.display tbody tr > .sorting_1 {
   width: 28px;
   height: 28px;
   font-weight: 500;
-  text-align: center;
   border-radius: 50%;
   margin: 3px 5px 0px 5px;
-  padding: 5px 10px;
-  border: 1px solid #007bff;
   background: var(--white) !important;
   color: var(--text-color2) !important;
   cursor: pointer;
@@ -601,19 +611,134 @@ table.dataTable.display tbody tr > .sorting_1 {
   font-weight: normal;
   color: var(--text-color);
   padding: 20px 0;
-}
-#example {
-  width: 100% !important;
-  overflow-x: scroll !important;
+  margin: 0;
 }
 
-#example tbody td {
-  width: 16.66% !important;
+.dataTables_info {
+  margin: 20px 0 !important;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 10px !important;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--background2);
+  height: 10px !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 1350px) {
+  #example td span {
+    font-size: 19px !important;
+  }
+  #example {
+    width: 1100px !important;
+  }
+
+  #example .total h1,
+  #example .total h3,
+  #example .total h2 {
+    font-size: 19px !important;
+  }
+
+  #example .project {
+    padding: 8px 30px !important;
+  }
+
+  #example .total {
+    padding: 8px 30px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .file-export-item svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .table-searchbox {
+    width: 200px;
+  }
+
+  .file-export-item .create-invoice {
+    white-space: nowrap;
+    padding: 0px 8px;
+    height: 30px;
+  }
+
+  .file-export-item .create-invoice h3 {
+    font-size: 14px !important;
+  }
+
+  .file-export-item .create-invoice span {
+    font-size: 18px !important;
+    padding: 2px;
+  }
+  .btn-secondary {
+    font-size: 16px !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  #data_table {
-    overflow-x: scroll;
+  .button-container {
+    display: block;
+    justify-content: center;
+  }
+  .file-export-item {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .button-container .search-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-searchbox {
+    width: 100%;
+  }
+  .dropdown-menu-custom {
+    left: -66px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .file-export-item svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .file-export-item .dt-button {
+    margin-left: 4px;
+  }
+
+  .file-export-item .create-invoice {
+    white-space: nowrap;
+    padding: 0px 4px;
+    height: 28px;
+  }
+
+  .file-export-item .create-invoice h3 {
+    font-size: 12px !important;
+    margin-bottom: -2px;
+  }
+
+  .file-export-item .create-invoice span {
+    font-size: 18px !important;
+    padding: 2px;
   }
 }
 
