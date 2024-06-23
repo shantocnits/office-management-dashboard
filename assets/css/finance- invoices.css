@@ -96,60 +96,525 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 /* scrollbar */
 
+/* Cards Start */
 
-/* Main Content Sizing Start */
-
-.main-content {
-  height: 100vh;
-  margin-left: 260px;
-  transition: all 0.5s;
-}
-.main-content .content {
-  padding: 0 15px 10px 15px;
-  margin-top: 70px;
+#cards {
+  width: 100%;
 }
 
-.page-content {
-  padding: 90px 20px 0px 20px;
-}
-body[data-sidebar-size="sm"] .main-content {
-  margin-left: 70px;
-}
-
-@media (max-width: 991.98px) {
-  body[data-sidebar-size="md"] #page-topbar {
-    left: 0;
-  }
-
-  .main-content {
-    position: absolute;
-    left: -260px;
-    width: 100%;
-  }
+#cards .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-/* Main Content Sizing End */
+#cards .card-body:hover {
+  box-shadow: var(--box-shadow);
+}
 
+#cards .card-icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#cards .card-icon img {
+  width: 100%;
+}
+
+#cards .card-icon svg {
+  width: 100% !important;
+}
+
+#cards h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  margin-top: 8px !important;
+  margin-bottom: 0px;
+}
+
+#cards h5 {
+  color: var(--text-color2);
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: 0;
+}
+
+/* Cards End */
 
 /* Data table Start */
-.button-container {
-  margin-bottom: 10px;
+
+#data_table {
+  width: 100%;
+  background: var(--white);
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.bredcam {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.dt-button {
-  background-color: #007BFF;
-  color: white;
+
+.bredcam span {
+  font-size: 30px;
+  padding: 0 6px;
+  color: #aaaaaa;
+}
+
+.bredcam h1 {
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--text-color2);
+}
+
+.bredcam a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button-container .search-item {
+  display: flex;
+  align-items: center;
+}
+.btn-secondary {
+  font-family: var(--primary-font);
+  font-size: 18px !important;
+  font-weight: 500;
+  background: none;
+  color: var(--text-color);
   border: none;
-  padding: 10px 20px;
+  padding: 6px !important;
+  margin-left: 10px;
+}
+.btn-secondary:hover {
+  background: none;
+  color: var(--text-color);
+  border: none;
+}
+
+.btn-secondary:focus {
+  color: var(--text-color) !important;
+  background-color: var(--hover-color) !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}
+
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 10px;
+  padding: 0px 0;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  left: 10px !important;
+}
+.dropdown-item-custom {
+  padding: 8px 12px;
   cursor: pointer;
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  display: block;
+  text-align: center;
+}
+.dropdown-item-custom:hover {
+  background-color: var(--hover-color);
+  border-radius: 4px;
+}
+
+.file-export-item {
+  display: flex;
+  align-items: center;
+}
+.file-export-item .create-invoice {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  margin-bottom: 4px;
+  height: 36px;
   border-radius: 5px;
+  background: var(--text-color2);
+  color: var(--white);
+  font-family: var(--primary-font);
+  border: none;
 }
-.dt-button:hover {
-  background-color: #0056b3;
+.file-export-item .create-invoice span {
+  font-size: 28px;
+  padding-right: 6px;
 }
-.custom-length-menu select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.file-export-item .create-invoice h3 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--primary-font);
 }
+.file-export-item .dt-button {
+  margin-left: 10px;
+  padding: 0px !important;
+  border: none !important;
+  background: var(--white) !important;
+}
+.file-export-item svg {
+  width: 35px;
+  height: 35px;
+  transition: 0.8s !important;
+}
+.file-export-item .dt-button svg:hover {
+  fill: var(--text-color2) !important;
+  transition: 2s !important;
+}
+.file-export-item .dt-button svg:hover rect {
+  stroke: none !important;
+}
+.file-export-item .dt-button svg:hover path {
+  fill: var(--white) !important;
+}
+.file-export-item #copyButton svg:hover path {
+  stroke: var(--white) !important;
+  fill: var(--text-color2) !important;
+}
+.entries {
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.entries h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.page-number {
+  background: rgb(214, 214, 214) !important;
+  border: none !important;
+  border-radius: 50% !important;
+}
+
+.custom-pagination .active {
+  background: rgb(180, 115, 115) !important;
+}
+
+.custom-length-menu {
+  background: none;
+  border: 1px solid var(--gray);
+  font-size: 14px;
+  font-family: var(--primary-font);
+  border-radius: 4px;
+}
+
+.custom-length-menu option {
+  text-align: center !important;
+}
+.table-searchbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px !important;
+  width: 300px;
+  padding: 6px 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+.table-searchbox svg {
+  margin-bottom: -5px;
+}
+
+#customSearchBox {
+  border: none;
+  width: 100%;
+}
+
+#example {
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+#example th {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+#example th:nth-child(1) {
+  padding-left: 0px !important;
+  text-align: left;
+}
+
+#example th:nth-child(8) {
+  padding-left: 0px !important;
+  padding-right: 15px !important;
+  text-align: right;
+}
+
+table.dataTable thead .sorting {
+  background-image: url(../images/sort_both.png);
+}
+table.dataTable thead .sorting_desc {
+  background-image: url(../images/sort_desc.png) !important;
+}
+table.dataTable thead .sorting_asc {
+  background-image: url(../images/sort_asc.png) !important;
+}
+table.dataTable.display tbody tr > .sorting_1 {
+  background: var(--white) !important;
+}
+
+#example th:nth-child(8).sorting {
+  background-image: none !important;
+  cursor: default;
+}
+
+#example td:nth-child(8) {
+  padding-right: 10px !important;
+  text-align: right;
+}
+
+#example tr {
+  background: var(--white) !important;
+  transition: 0.2s;
+}
+
+#example tbody tr:hover {
+  background: var(--hover-color) !important;
+}
+
+#example .project {
+  width: 20%;
+  white-space: wrap;
+}
+
+#example .project span,
+#example .serial span {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#example .serial {
+  padding-left: 0px;
+}
+
+#example .serial span {
+  margin-left: -20px !important;
+}
+
+#example .invoice span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+#example .client {
+  position: relative;
+  margin: auto;
+  text-align: center !important;
+}
+
+#example .client-details {
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  background: none !important;
+  margin-top: 8px;
+}
+
+#example .client-details .client-profile img {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50%;
+}
+
+#example .client-details .details {
+  display: block;
+  margin-left: 10px;
+}
+
+#example .client-details h1 {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--primary-font);
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+#example .client-details h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: var(--primary-font);
+  text-align: left;
+  margin: 0;
+}
+
+#example .total h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#example .total h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#example .total h2 span {
+  font-size: 20px;
+  color: #14cc52;
+  padding-right: 5px;
+}
+
+#example .total h3 {
+  font-size: 20px;
+  color: var(--text-color2);
+}
+
+#example .date span {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+#example .status span {
+  font-size: 20px;
+  color: #14cc52;
+  font-weight: normal;
+}
+
+#example .status .unpaid {
+  font-size: 20px;
+  color: var(--text-color2);
+  font-weight: normal;
+}
+
+#example .edit svg {
+  width: 42px !important;
+  height: 42px;
+}
+
+#example .edit svg:hover rect {
+  fill: var(--text-color2) !important;
+}
+
+#example .edit svg:hover path {
+  fill: var(--white) !important;
+  transition: 0.3s !important;
+}
+
+#example.dataTable {
+  border: none !important;
+}
+
+#example td {
+  vertical-align: super !important;
+  border-top: none !important;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+#example.dataTable thead th {
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.button-container .custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-pagination .button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color2);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.custom-pagination button.disabled {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+  display: none;
+}
+
+.custom-pagination .page-number {
+  width: 28px;
+  height: 28px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50%;
+  margin: 3px 5px 0px 5px;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  background: var(--white) !important;
+  color: var(--text-color2) !important;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.custom-pagination .page-number.active {
+  background-color: var(--text-color2) !important;
+  color: var(--white) !important;
+}
+
+.copyright p {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--text-color);
+  padding: 20px 0;
+}
+#example {
+  width: 100% !important;
+  overflow-x: scroll !important;
+}
+
+#example tbody td {
+  width: 16.66% !important;
+}
+
+@media screen and (max-width: 992px) {
+  #data_table {
+    overflow-x: scroll;
+  }
+}
+
+/* Data table End */
