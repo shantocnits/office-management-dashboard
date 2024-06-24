@@ -1543,127 +1543,102 @@ body[data-layout-mode="dark"] .btn-secondary:focus {
 
 body[data-layout-mode="dark"] .dropdown-menu-custom {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .dropdown-menu-custom a:hover {
   background: var(--content-and-hover-bg);
-  
 }
 
 body[data-layout-mode="dark"] .dropdown-menu-custom a {
   color: var(--white);
-  
 }
 
 body[data-layout-mode="dark"] .file-export-item .dt-button {
   background: none !important;
- 
-  
 }
 
 body[data-layout-mode="dark"] .file-export-item .dt-button svg {
   border: 1px solid var(--white);
   border-radius: 4px;
-  
 }
 
-body[data-layout-mode="dark"] .file-export-item .dt-button svg:hover  {
+body[data-layout-mode="dark"] .file-export-item .dt-button svg:hover {
   fill: var(--content-and-hover-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .file-export-item .dt-button svg path {
   fill: var(--white) !important;
-  
 }
 
-body[data-layout-mode="dark"] .file-export-item #copyButton svg path{
+body[data-layout-mode="dark"] .file-export-item #copyButton svg path {
   fill: none !important;
   stroke: var(--white) !important;
-  
 }
 
-body[data-layout-mode="dark"] .entries h1{
+body[data-layout-mode="dark"] .entries h1 {
   color: var(--white) !important;
-  
 }
 
 body[data-layout-mode="dark"] .entries .custom-length-menu {
   color: var(--white) !important;
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .entries .custom-length-menu option {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody td {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody td span {
   color: var(--white) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody .client h1 {
   color: var(--white) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody .client h2 {
   color: var(--gray) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody .total h1 {
   color: var(--white) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody .total h2 {
   color: var(--gray) !important;
-  
 }
 
 body[data-layout-mode="dark"] .table-wrapper tbody .edit svg path {
   fill: var(--white) !important;
-  
 }
 
 body[data-layout-mode="dark"] #example th {
   background: var(--dark-mode-bg) !important;
   color: var(--white);
-  
 }
 
 body[data-layout-mode="dark"] #example.dataTable thead th {
   border-bottom: 1px solid rgb(255, 255, 255);
-  
 }
 
 body[data-layout-mode="dark"] #example td {
   border-bottom: 1px solid rgba(255, 255, 255, 0.26);
-  
 }
 
 body[data-layout-mode="dark"] #example th:nth-child(1) {
   padding-left: 10px !important;
-  
 }
 
-body[data-layout-mode="dark"] table.dataTable.display tbody tr > .sorting_1  {
+body[data-layout-mode="dark"] table.dataTable.display tbody tr > .sorting_1 {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[data-layout-mode="dark"] .dataTables_info {
@@ -2000,127 +1975,102 @@ body[light-mode="dark"] .btn-secondary:focus {
 
 body[light-mode="dark"] .dropdown-menu-custom {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .dropdown-menu-custom a:hover {
   background: var(--content-and-hover-bg);
-  
 }
 
 body[light-mode="dark"] .dropdown-menu-custom a {
   color: var(--white);
-  
 }
 
 body[light-mode="dark"] .file-export-item .dt-button {
   background: none !important;
- 
-  
 }
 
 body[light-mode="dark"] .file-export-item .dt-button svg {
   border: 1px solid var(--white);
   border-radius: 4px;
-  
 }
 
-body[light-mode="dark"] .file-export-item .dt-button svg:hover  {
+body[light-mode="dark"] .file-export-item .dt-button svg:hover {
   fill: var(--content-and-hover-bg) !important;
-  
 }
 
 body[light-mode="dark"] .file-export-item .dt-button svg path {
   fill: var(--white) !important;
-  
 }
 
-body[light-mode="dark"] .file-export-item #copyButton svg path{
+body[light-mode="dark"] .file-export-item #copyButton svg path {
   fill: none !important;
   stroke: var(--white) !important;
-  
 }
 
-body[light-mode="dark"] .entries h1{
+body[light-mode="dark"] .entries h1 {
   color: var(--white) !important;
-  
 }
 
 body[light-mode="dark"] .entries .custom-length-menu {
   color: var(--white) !important;
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .entries .custom-length-menu option {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody td {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody td span {
   color: var(--white) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody .client h1 {
   color: var(--white) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody .client h2 {
   color: var(--gray) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody .total h1 {
   color: var(--white) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody .total h2 {
   color: var(--gray) !important;
-  
 }
 
 body[light-mode="dark"] .table-wrapper tbody .edit svg path {
   fill: var(--white) !important;
-  
 }
 
 body[light-mode="dark"] #example th {
   background: var(--dark-mode-bg) !important;
   color: var(--white);
-  
 }
 
 body[light-mode="dark"] #example.dataTable thead th {
   border-bottom: 1px solid rgb(255, 255, 255);
-  
 }
 
 body[light-mode="dark"] #example td {
   border-bottom: 1px solid rgba(255, 255, 255, 0.26);
-  
 }
 
 body[light-mode="dark"] #example th:nth-child(1) {
   padding-left: 10px !important;
-  
 }
 
-body[light-mode="dark"] table.dataTable.display tbody tr > .sorting_1  {
+body[light-mode="dark"] table.dataTable.display tbody tr > .sorting_1 {
   background: var(--dark-mode-bg) !important;
-  
 }
 
 body[light-mode="dark"] .dataTables_info {
@@ -2134,6 +2084,5 @@ body[light-mode="dark"] .custom-pagination .button {
 body[light-mode="dark"] .copyright p {
   color: var(--white) !important;
 }
-
 
 /*  Toggle button Dark Mode End */

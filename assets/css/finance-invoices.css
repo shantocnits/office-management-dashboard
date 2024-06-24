@@ -286,20 +286,17 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 0px !important;
   border: none !important;
   background: var(--white) !important;
-  
 }
-.file-export-item .dt-button svg path{
+.file-export-item .dt-button svg path {
   transition: 0.6s !important;
 }
 
 .file-export-item svg {
   width: 35px;
   height: 35px;
- 
 }
 .file-export-item .dt-button svg:hover {
   fill: var(--text-color2) !important;
-  
 }
 .file-export-item .dt-button svg:hover rect {
   stroke: none !important;
@@ -533,7 +530,7 @@ table.dataTable.display tbody tr > .sorting_1 {
   height: 42px;
 }
 
-#example .edit svg path{
+#example .edit svg path {
   transition: 0.8s !important;
 }
 
@@ -582,7 +579,6 @@ table.dataTable.display tbody tr > .sorting_1 {
   color: var(--text-color2);
   cursor: pointer;
   border-radius: 4px;
-  
 }
 
 .custom-pagination button.disabled {

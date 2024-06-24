@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-font: "Baloo Da 2", sans-serif;
+  --white: #ffffff;
+  --text-color: #192045;
+  --text-color2: #af2222;
+  --primary-color: #ffd4d4;
+  --stroke: #ffb7b7;
+  --hover-color: #fdeaea;
+  --gray: #b8b8b8;
+  --background: #ffd4d4;
+  --background2: #ffb7b7;
+  --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 17%);
+  --dark-mode-bg: #292731;
+  --dark-mode-text: #c0c5cb;
+  --content-and-hover-bg: #414141;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/*====================
+Reset Default CSS End
+====================*/
+
+/* scrollbar */
+html ::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: var(--dark-mode-text);
+  width: 10px;
+  border-radius: 5px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+  cursor: pointer;
+}
+/* scrollbar */
+
+/* Cards Start */
+
+#cards {
+  width: 100%;
+  margin-top: -10px;
+}
+
+#cards .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+#cards .card-body:hover {
+  box-shadow: var(--box-shadow);
+}
+
+#cards .card-icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#cards .card-icon img {
+  width: 100%;
+}
+
+#cards .card-icon svg {
+  width: 100% !important;
+}
+
+#cards h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  margin-top: 8px !important;
+  margin-bottom: 0px;
+}
+
+#cards h5 {
+  color: var(--text-color2);
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: 0;
+}
+
+/* Cards End */
+
+/* Finance Invoice Details Start */
+
+.bredcam {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 20px 0;
+}
+
+.bredcam span {
+  font-size: 30px;
+  padding: 0 6px;
+  color: #aaaaaa;
+}
+
+.bredcam h1 {
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--text-color2);
+}
+
+.bredcam a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
+#invoice-details {
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#invoice-details .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#invoice-details .brand-logo {
+  margin-bottom: 10px;
+}
+
+#invoice-details .brand-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+#invoice-details .brand-logo span {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color2);
+  padding-left: 5px;
+}
+
+#invoice-details .brand-address p,
+#invoice-details .brand-address h1 {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+#invoice-details .brand-address h1 {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+#invoice-details .brand-address h1 span {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+  padding-left: 6px;
+}
+
+#invoice-details .brand-address p span {
+  padding-left: 6px;
+}
+
+#invoice-details .address h1 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+#invoice-details .address h2 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#invoice-details .address h2 {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+.invoice-details-table {
+  width: 100%;
+}
+
+.invoice-details-table .paid {
+  border: 1px solid #14cc52;
+  color: #14cc52;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  font-size: 26px;
+  font-weight: normal;
+  padding: 0px 10px;
+  margin-bottom: -30px;
+}
+
+.invoice-details-table {
+  margin-bottom: 20px;
+}
+
+.invoice-details-table thead tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background);
+}
+
+.invoice-details-table thead tr th {
+  width: 25%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.invoice-details-table tbody tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invoice-details-table tbody tr:nth-child(1) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.invoice-details-table tbody tr:nth-child(2) td:nth-child(5) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.invoice-details-table tbody tr td {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.invoice-details-table tbody tr td h1 {
+  color: var(--text-color) !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+}
+
+#invoice-details .condition {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#invoice-details .condition .signature h1 {
+  position: absolute;
+  border-top: 1px solid var(--gray);
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: var(--text-color);
+  padding: 10px 90px 0px 90px;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+#invoice-details .terms-condition p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#invoice-details .invoice-details-button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+#invoice-details .invoice-details-button .cancel {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  background: none;
+  border-radius: 5px;
+  color: var(--text-color2);
+  font-size: 20px;
+  padding: 2px 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+#invoice-details .invoice-details-button .cancel:hover {
+  border: 1px solid var(--text-color2);
+  background: var(--text-color2);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 20px;
+  padding: 2px 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+#invoice-details .invoice-details-button .send {
+  display: inline-block;
+  border: 1px solid var(--text-color2);
+  background: var(--text-color2);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 20px;
+  padding: 2px 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+.copyright p {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--text-color);
+  padding: 20px 0;
+  margin: 0;
+}
+
+.invoice-details-table-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.invoice-details-table-wrapper::-webkit-scrollbar {
+  height: 10px !important;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.invoice-details-table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--background2);
+  height: 10px !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #invoice-details .contact {
+    margin-bottom: 40px;
+  }
+
+  .invoice-details-table-wrapper {
+    overflow-x: scroll !important;
+  }
+
+  #invoice-details .condition .signature h1 {
+    font-size: 14px;
+    padding: 10px 20px 0px 20px;
+  }
+
+  #invoice-details .terms-condition p {
+    font-size: 13px;
+  }
+
+  #invoice-details .invoice-details-button {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #invoice-details .invoice-details-button .cancel {
+    font-size: 13px;
+    padding: 2px 15px;
+  }
+
+  #invoice-details .invoice-details-button .send {
+    font-size: 13px;
+    padding: 2px 15px;
+  }
+
+  #invoice-details .contact {
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  #invoice-details .contact .brand-address {
+    text-align: left;
+  }
+
+  #invoice-details .contact .brand-address:nth-child(2) {
+    text-align: right;
+    white-space: nowrap;
+    padding-left: 20px;
+  }
+
+  #invoice-details .brand-address p,
+  #invoice-details .brand-address h1 {
+    font-size: 14px;
+  }
+
+  #invoice-details .brand-address h1 {
+    font-size: 14px;
+  }
+
+  #invoice-details .brand-address h1 span {
+    font-size: 16px;
+  }
+}
+
+/* @media screen and (max-width: 515px) {
+
+    #invoice-details .contact .brand-address:nth-child(2) {
+        margin-top: -20px;
+      }
+}
+
+@media screen and (max-width:406px) {
+
+    #invoice-details .contact .brand-address:nth-child(2) {
+        margin-top: -30px;
+      }
+}
+
+@media screen and (max-width:377px) {
+
+    #invoice-details .contact .brand-address:nth-child(2) {
+        margin-top: -63px;
+        
+      } */
+  
+  
+
+}
+
+/* Finance Invoice Details End */

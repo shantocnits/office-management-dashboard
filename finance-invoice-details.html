@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Dashboard - Admin & Dashboard Template</title>
+    <title>Finance - Invoice Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       content="Premium Multipurpose Admin & Dashboard Template"
@@ -32,7 +32,7 @@
       type="text/css"
     />
     <link
-      href="assets/css/style.css"
+      href="assets/css/finance-invoice-details.css"
       id="app-style"
       rel="stylesheet"
       type="text/css"
@@ -1300,28 +1300,107 @@
           </div>
         </section>
         <!-- Cards End -->
-  
-        <!-- Dashboard Charts Start -->
-        <section id="dashboard-chart">
-          <div class="heading-name">
-            <h1>Dashboard</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="bar_chart">
-                <div id="chart"></div>
-              </div>
-            </div>
 
-            <div class="col-lg-4">
-              <div class="pie_chart">
-                <div id="piechart"></div>
+        <!-- Finance Invoice Details Start -->
+        <div class="bredcam">
+          <h1>Finances</h1>
+          <span>|</span>
+          <a class="bredcam-invoice" href="#">Invoices</a>
+          <span>|</span>
+          <a class="finance-invoice-details" href="#">Invoice Details</a>
+        </div>
+        <section id="invoice-details">
+          <div class="contact">
+            <div class="brand-address">
+              <div class="brand-logo">
+                <img src="./assets/icons/logo2.svg" alt="">
+                <span>Octa</span>
               </div>
+              <h1>3092 Chardonnay Drive, Washington, USA</h1>
+              <p>Call : +360-120-541</p>
+            </div>
+            <div class="brand-address">
+              <div class="brand-logo">
+                <span>INVOICE</span>
+              </div>
+              <h1>Invoice Number: <span>INV#01</span></h1>
+              <p>Date: <span>31, Jan 2022</span></p>
+            </div>
+          </div>
+
+          <div class="address">
+            <h1>To</h1>
+            <h2>Thomas Lee</h2>
+            <p>thomaslee002@gmail.com</p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <p>4648 Junior Avenue, Georgia, USA</p>
+
+            <div class="invoice-details-table-wrapper">
+                <table class="invoice-details-table">
+                    <thead>
+                      <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price (USD)</th>
+                        <th>Amount (USD)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>VRISTA: UI/UX Design</td>
+                        <td class="d-inline-block">
+                          <h1>20</h1>
+                          <span>UI Design</span>
+                        </td>
+                        <td>$800</td>
+                        <td>$16,000</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="paid">Paid</span>
+                        </td>
+                        <td></td>
+                        <td style="border-bottom: 1px solid #b8b8b8;">Total Amount:</td>
+                        <td style="border-bottom: 1px solid #b8b8b8;">$16,000</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="border-bottom: 1px solid #b8b8b8;">Due Amount:</td>
+                        <td style="border-bottom: 1px solid #b8b8b8;">$0.00</td>
+                      </tr>
+                      
+                    </tbody>
+                   
+                  </table>
+            </div>
+            
+            <div class="condition">
+                <div class="signature">
+                    <h1>Signature</h1>
+                </div>
+
+                <div class="terms-condition">
+                    <p>Terms and Conditions</p>
+                    <p>Thank you for your Business</p>
+
+                    <div class="invoice-details-button">
+                        <button type="submit" class="cancel">Cancel</button>
+                        <button type="submit" class="send">Send</button>
+                    </div>
+                </div>
             </div>
           </div>
         </section>
-
-        <!-- Dashboard Charts End -->
+        <div class="copyright">
+          <p>&copy; 2023. All Rights Reserved.</p>
+        </div>
+        <!-- Finance Invoice Details End -->
       </div>
     </div>
     <!-- Hero Main Content End -->
