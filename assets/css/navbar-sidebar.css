@@ -1995,7 +1995,7 @@ body[light-mode="dark"] .file-export-item .dt-button svg {
 }
 
 body[light-mode="dark"] .file-export-item .dt-button svg:hover {
-  fill: var(--content-and-hover-bg) !important;
+  fill: var(--text-color2) !important;
 }
 
 body[light-mode="dark"] .file-export-item .dt-button svg path {
@@ -2046,6 +2046,14 @@ body[light-mode="dark"] .table-wrapper tbody .total h1 {
 
 body[light-mode="dark"] .table-wrapper tbody .total h2 {
   color: var(--gray) !important;
+}
+
+body[light-mode="dark"] .table-wrapper tbody .total h2 span {
+  color: #14CC52 !important;
+}
+
+body[light-mode="dark"] .table-wrapper tbody .status .unpaid {
+  color: var(--text-color2) !important;
 }
 
 body[light-mode="dark"] .table-wrapper tbody .edit svg path {

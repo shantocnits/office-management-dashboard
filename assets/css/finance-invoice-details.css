@@ -224,6 +224,14 @@ html ::-webkit-scrollbar-thumb:hover {
   font-weight: normal;
 }
 
+#invoice-details .invoice-address p,
+#invoice-details .invoice-address h1 {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
 #invoice-details .brand-address h1 {
   font-family: var(--primary-font);
   font-size: 18px;
@@ -238,7 +246,31 @@ html ::-webkit-scrollbar-thumb:hover {
   padding-left: 6px;
 }
 
+#invoice-details .invoice-address h1 span {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+  padding-left: 6px;
+}
+
+#invoice-details .invoice-address .title span {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  color: var(--text-color2);
+  font-weight: 600;
+  padding-left: 6px;
+}
+
+#invoice-details .invoice-address .title {
+  margin-bottom: 20px !important;
+}
+
 #invoice-details .brand-address p span {
+  padding-left: 6px;
+}
+
+#invoice-details .invoice-address p span {
   padding-left: 6px;
 }
 
@@ -504,6 +536,19 @@ html ::-webkit-scrollbar-thumb:hover {
   #invoice-details .brand-address h1 span {
     font-size: 16px;
   }
+
+  .bredcam h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .bredcam a {
+    font-size: 14px;
+  }
+
+  .bredcam span {
+    font-size: 18px;
+  }
 }
 
 /* @media screen and (max-width: 515px) {
@@ -526,9 +571,5 @@ html ::-webkit-scrollbar-thumb:hover {
         margin-top: -63px;
         
       } */
-  
-  
-
-}
 
 /* Finance Invoice Details End */

@@ -191,6 +191,15 @@ html ::-webkit-scrollbar-thumb:hover {
   font-family: var(--primary-font);
   color: var(--text-color);
 }
+/* 
+table.dataTable {
+  border-spacing: 0px !important;
+  border-collapse:var(--text-color2) !important;
+}
+
+table.dataTable td {
+  border-right: none !important;
+} */
 
 .button-container {
   display: flex;
@@ -551,6 +560,7 @@ table.dataTable.display tbody tr > .sorting_1 {
   vertical-align: super !important;
   border-top: none !important;
   border-bottom: 1px solid rgb(245, 245, 245);
+  
 }
 
 #example.dataTable thead th {

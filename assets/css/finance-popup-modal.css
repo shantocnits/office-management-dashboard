@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-font: "Baloo Da 2", sans-serif;
+  --white: #ffffff;
+  --text-color: #192045;
+  --text-color2: #af2222;
+  --primary-color: #ffd4d4;
+  --stroke: #ffb7b7;
+  --hover-color: #fdeaea;
+  --gray: #b8b8b8;
+  --background: #ffd4d4;
+  --background2: #ffb7b7;
+  --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 17%);
+  --dark-mode-bg: #292731;
+  --dark-mode-text: #c0c5cb;
+  --content-and-hover-bg: #414141;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/*====================
+Reset Default CSS End
+====================*/
+
+
+/* Finance- Pop Up Modal Start */
+body {
+    position: relative;
+    overflow: hidden !important;
+    
+}
+.main-content {
+    overflow: hidden !important;
+}
+#popup-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background: #000000b2 !important;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 100px 0px;
+}
+
+
+/* Finance- Pop Up Modal End */
+
+
+#signup {
+    width: 100%;
+    max-width: 65%;
+    margin: auto;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    font-family: var(--primary-font);
+    
+  }
+
+#signup label {
+    width: 100%;
+    font-family: var(--primary-font);
+    
+  }
+#signup::placeholder {
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    
+  }
+
+#signup .data input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    
+  }
+#signup .data textarea {
+    width: 100%;
+    font-family: var(--primary-font);
+  }
+
+#signup .country select {
+    width: 100%;
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    
+  }
+  
+/*   
+  #signup > fieldset {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 min(2rem, 3vw);
+  }
+  
+ 
+  
+  #signup > fieldset > label,
+  #signup legend {
+    text-indent: 0.5rem;
+    font-size: 1.125rem;
+    color: #075;
+  }
+  
+  #signup > fieldset > label.longData {
+    width: 100%;
+  }
+  
+  #signup > fieldset > label * + br {
+    display: none;
+  }
+  #signup > fieldset > label input,
+  #signup > fieldset > label select,
+  #signup > fieldset > label textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.125rem;
+    background: #fff;
+    color: #555;
+    border: 0.0625rem solid #097;
+    border-radius: 0.25rem;
+  }
+  
+  #signup input,
+  #signup select,
+  #signup textarea {
+    outline: none;
+  }
+  
+  #signup textarea {
+    resize: vertical;
+  }
+  
+  #signup input:focus,
+  #signup select:focus,
+  #signup textarea:focus {
+    box-shadow: 0 0 0.0625rem 0.125rem #097;
+  }
+  
+  #signup .jsRange div {
+    display: flex;
+  }
+  
+  #signup .jsRange input {
+    width: auto;
+  }
+  
+  #signup .jsRange output {
+    flex-grow: 0;
+    width: 3.5em;
+    padding: 0.25rem 0;
+    margin-left: 0.5rem;
+    text-align: center;
+    text-indent: 0;
+    background: #075;
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+  
+  #signup .radioOrCheckboxes label {
+    margin-right: 0.5em;
+  }
+  
+  #signup > footer {
+    padding: 1rem min(2rem, 3vw);
+    text-align: right;
+  }
+  #signup > footer button {
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    color: #fff;
+    background: #075;
+    border: none;
+    border-radius: 0.3125em;
+    text-shadow: 0 0 0.5em #000;
+    transition: transform 0.3s;
+  }
+  
+  #signup > footer button:hover,
+  #signup > footer button:focus {
+    transform: scale(1.1);
+  }
+   
