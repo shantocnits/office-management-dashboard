@@ -6824,21 +6824,19 @@
 
             <fieldset class="radioOrCheckboxes">
               <h1>Gender</h1>
-              <label>
-                <input type="radio" name="gender" value="male" />
-                Male 
-              </label>
-              <label>
-                <input type="radio" name="gender" value="female" />
-                Female 
-              </label>
-              <label>
-                <input type="radio" name="gender" value="other" />
-                Other
-              </label>
+              <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="male" />
+                    <span>Male </span>
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="female" />
+                    <span>Female</span> 
+                  </label>
+              </div>
             </fieldset>
 
-            <label class="data">
+            <label class="data textarea">
               <h1>Description</h1>
               <textarea name="bio" rows="6" placeholder="Type here..."></textarea><br/>
             </label>
@@ -6849,10 +6847,6 @@
             </label>
           </div>
         </div>
-
-        <footer>
-          <button>Create</button>
-        </footer>
       </form>
     </section>
     <!-- Finance- Pop Up Modal End -->
