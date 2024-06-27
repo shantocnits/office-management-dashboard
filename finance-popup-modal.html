@@ -39,6 +39,12 @@
       rel="stylesheet"
       href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"
     />
+
+    <!-- Datepicker Jquary UI link -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <!-- Navbar Start -->
@@ -6756,7 +6762,7 @@
                 name="firstName"
                 placeholder="Enter your full name"
                 required
-              /><br/>
+              /><br />
             </label>
 
             <label class="data">
@@ -6766,12 +6772,17 @@
                 name="email"
                 placeholder="Enter your email"
                 required
-              /><br/>
+              /><br />
             </label>
 
             <label class="data">
               <h1>Username</h1>
-              <input type="text" name="Username" placeholder="Enter your email or username" required /><br/>
+              <input
+                type="text"
+                name="Username"
+                placeholder="Enter your email or username"
+                required
+              /><br />
             </label>
 
             <label class="country">
@@ -6781,28 +6792,66 @@
                 <option>Bangladesh</option>
                 <option>Soudi Arab</option>
                 <option>America</option>
-                <option>Brazil</option>
-              </select><br/>
+                <option>Brazil</option></select
+              ><br />
             </label>
+
+            <div class="datepicker-wrapper">
+              <h1>Choose a Date</h1>
+              <label class="datepicker-container">
+                <input
+                  type="text"
+                  id="datepicker-input"
+                  placeholder="Select a date"
+                />
+                <div id="datepicker"></div>
+                <div class="calender">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 0.8C0 0.358172 0.358172 0 0.8 0H31.2C31.6418 0 32 0.358172 32 0.8V31.2C32 31.6418 31.6418 32 31.2 32H0.8C0.358172 32 0 31.6418 0 31.2V0.8ZM1.6 7.92442V30.4H30.4V7.92442H1.6ZM30.4 6.32442H1.6V1.6H30.4V6.32442ZM3.68 11.9851C3.68 11.5433 4.03817 11.1851 4.48 11.1851H8.96C9.40183 11.1851 9.76 11.5433 9.76 11.9851V16.4651C9.76 16.9069 9.40183 17.2651 8.96 17.2651H4.48C4.03817 17.2651 3.68 16.9069 3.68 16.4651V11.9851ZM5.28 12.7851V15.6651H8.16V12.7851H5.28ZM12.96 11.9851C12.96 11.5433 13.3182 11.1851 13.76 11.1851H18.24C18.6818 11.1851 19.04 11.5433 19.04 11.9851V16.4651C19.04 16.9069 18.6818 17.2651 18.24 17.2651H13.76C13.3182 17.2651 12.96 16.9069 12.96 16.4651V11.9851ZM14.56 12.7851V15.6651H17.44V12.7851H14.56ZM22.24 11.9851C22.24 11.5433 22.5982 11.1851 23.04 11.1851H27.52C27.9618 11.1851 28.32 11.5433 28.32 11.9851V16.4651C28.32 16.9069 27.9618 17.2651 27.52 17.2651H23.04C22.5982 17.2651 22.24 16.9069 22.24 16.4651V11.9851ZM23.84 12.7851V15.6651H26.72V12.7851H23.84ZM3.68 21.8594C3.68 21.4175 4.03817 21.0594 4.48 21.0594H8.96C9.40183 21.0594 9.76 21.4175 9.76 21.8594V26.3394C9.76 26.7812 9.40183 27.1394 8.96 27.1394H4.48C4.03817 27.1394 3.68 26.7812 3.68 26.3394V21.8594ZM5.28 22.6594V25.5394H8.16V22.6594H5.28ZM12.96 21.8594C12.96 21.4175 13.3182 21.0594 13.76 21.0594H18.24C18.6818 21.0594 19.04 21.4175 19.04 21.8594V26.3394C19.04 26.7812 18.6818 27.1394 18.24 27.1394H13.76C13.3182 27.1394 12.96 26.7812 12.96 26.3394V21.8594ZM14.56 22.6594V25.5394H17.44V22.6594H14.56ZM22.24 21.8594C22.24 21.4175 22.5982 21.0594 23.04 21.0594H27.52C27.9618 21.0594 28.32 21.4175 28.32 21.8594V26.3394C28.32 26.7812 27.9618 27.1394 27.52 27.1394H23.04C22.5982 27.1394 22.24 26.7812 22.24 26.3394V21.8594ZM23.84 22.6594V25.5394H26.72V22.6594H23.84Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </label>
+            </div>
 
             <fieldset class="radioOrCheckboxes">
               <h1>Programming Skills</h1>
-              <label>
-                <input type="checkbox" name="hobbies" value="music" />
-                Music 
-              </label>
-              <label>
-                <input type="checkbox" name="cooking" value="cooking" />
-                Cook 
-              </label>
-              <label>
-                <input type="checkbox" name="travel" value="travel" />
-                Travel 
-              </label>
-              <label>
-                <input type="checkbox" name="movies" value="movies" />
-                Movie
-              </label>
+              <div class="skills">
+                <div class="skil-item">
+                  <label>
+                    <input type="checkbox" name="hobbies" value="music" />
+                    HTML
+                  </label>
+                  <label>
+                    <input type="checkbox" name="travel" value="travel" />
+                    CSS
+                  </label>
+                  <label>
+                    <input type="checkbox" name="movies" value="movies" />
+                    JavaScript
+                  </label>
+                </div>
+                <div class="skill-item">
+                  <label>
+                    <input type="checkbox" name="cooking" value="cooking" />
+                    React
+                  </label>
+                  <label>
+                    <input type="checkbox" name="movies" value="movies" />
+                    Angular
+                  </label>
+                </div>
+              </div>
             </fieldset>
           </div>
 
@@ -6819,32 +6868,90 @@
 
             <label class="data">
               <h1>Password</h1>
-              <input type="password" name="password" placeholder="Enter your password" required /><br />
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              /><br />
             </label>
 
             <fieldset class="radioOrCheckboxes">
               <h1>Gender</h1>
               <div class="gender">
-                <label>
-                    <input type="radio" name="gender" value="male" />
-                    <span>Male </span>
-                  </label>
-                  <label>
-                    <input type="radio" name="gender" value="female" />
-                    <span>Female</span> 
-                  </label>
+                <label class="male">
+                  <input type="radio" name="gender" value="male" />
+                  <span>Male </span>
+                </label>
+                <label class="female">
+                  <input type="radio" name="gender" value="female" />
+                  <span>Female</span>
+                </label>
               </div>
             </fieldset>
 
             <label class="data textarea">
               <h1>Description</h1>
-              <textarea name="bio" rows="6" placeholder="Type here..."></textarea><br/>
+              <textarea
+                name="bio"
+                rows="6"
+                placeholder="Type here..."
+              ></textarea
+              ><br />
             </label>
 
-            <label>
-              <h1>Upload Profile Picture</h1><br />
-              <input type="file" name="profilePicture" /><br />
-            </label>
+            <div class="upload-profile">
+              <div class="item">
+                <div class="img-box">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="50"
+                      height="50"
+                      fill="url(#pattern0_1204_6)"
+                      fill-opacity="0.5"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_1204_6"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_1204_6"
+                          transform="scale(0.005)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_1204_6"
+                        width="200"
+                        height="200"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="profile-wrapper">
+                  <label class="custom-file-input-wrapper">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      aria-label="Upload Photo"
+                    />
+                  </label>
+                  <p>PNG,JPEG or GIF (up to 1 MB)</p>
+                </div>
+              </div>
+              <button type="submit" class="submit">Submit</button>
+            </div>
           </div>
         </div>
       </form>
@@ -6874,7 +6981,11 @@
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
     <!-- Include Print button -->
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <!-- Don't forget to include Jquery also -->
 
     <script src="./assets/js/datatables.js"></script>
+    <script src="./assets/js/datepicker.js"></script>
+    <!-- Datepicker jquary -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   </body>
 </html>

@@ -108,7 +108,7 @@ body {
   margin: auto;
   background: var(--white);
   border-radius: 12px;
-  padding: 30px 30px 5px 30px;
+  padding: 30px 30px 20px 30px;
   font-family: var(--primary-font);
 }
 
@@ -139,10 +139,11 @@ body {
 #signup .radioOrCheckboxes .gender {
   display: flex;
   align-items: center;
-  justify-content: end;
+  
 }
 
 #signup .radioOrCheckboxes .gender label {
+  width: 130px;
   display: flex;
   align-items: center;
 }
@@ -153,11 +154,32 @@ body {
   font-weight: 600;
 }
 
-#signup .radioOrCheckboxes .gender input {
-  width: 20px;
-  height: 20px;
+#signup .radioOrCheckboxes input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--text-color);
+  mix-blend-mode: multiply;
   border-radius: 10px !important;
   padding-top: 10px !important;
+}
+
+#signup .radioOrCheckboxes .skills {
+  display: flex;
+}
+
+#signup .radioOrCheckboxes .skills label {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#signup .radioOrCheckboxes .skills label input {
+  margin-right: 10px;
 }
 
 #signup .data input {
@@ -183,6 +205,90 @@ body {
   margin-top: 20px;
 }
 
+.upload-profile .item {
+  display: flex !important;
+  gap: 10px;
+}
+.upload-profile .item .img-box {
+  width: 84px;
+  height: 70px;
+  border-radius: 6px;
+  background: #DADADA;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.profile-wrapper {
+  width: 100%;
+}
+.profile-wrapper p {
+  margin: -16px 0px 0px 0px;
+  font-size: 14px;
+  color: #AAAAAA;
+}
+.custom-file-input-wrapper {
+  font-family: var(--primary-font);
+  position: relative;
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #666;
+  background: #CDCDCD;
+  cursor: pointer;
+}
+
+.custom-file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.custom-file-input-wrapper input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -2;
+  cursor: pointer;
+}
+.custom-file-input-wrapper::before {
+  content: '';
+  position: absolute;
+  margin: 0px 105px 0px auto; /* Adjust the position of the icon */
+  width: 20px; /* Adjust the width of the icon */
+  height: 20px; /* Adjust the height of the icon */
+  background-image: url('../icons/upload-photo-icon.svg'); /* Replace with your icon path */
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-file-input-wrapper::after {
+  content: 'Upload Photo';
+  margin-right: -20px !important;
+  /* Your existing styles for text */
+}
+
+.upload-profile .submit {
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--text-color2);
+  color: var(--white);
+  padding: 10px;
+  margin-top: 20px;
+}
+
 #signup .country select {
   width: 100%;
   border: 1px solid #aaaaaa;
@@ -191,3 +297,84 @@ body {
   font-family: var(--primary-font);
   outline: none;
 }
+
+.datepicker-wrapper h1 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.datepicker-container {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#datepicker {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.datepicker-container input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  border: none !important;
+  font-family: var(--primary-font);
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid var(--gray) !important;
+  background: #f6f6f6 !important;
+  color: var(--text-color) !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #c5c5c5;
+  background: var(--white) !;
+  font-weight: normal;
+  color: var(--text-color) !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid var(--gray) !important;
+  background: var(--background2) !important;
+  font-weight: normal;
+  color: var(--white) !important;
+}
+
+.ui-widget-header {
+  border: 1px solid #dddddd;
+  background: var(--background) !important;
+  color: #333333;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  
+#signup {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 30px 30px 20px 30px;
+  font-family: var(--primary-font);
+}
+
+#signup .radioOrCheckboxes .skills {
+  margin-bottom: 10px;
+}
+  
+}
+ 

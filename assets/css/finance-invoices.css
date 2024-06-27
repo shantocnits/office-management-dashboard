@@ -523,14 +523,23 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example .status span {
+  height: 10px;
   font-size: 20px;
   color: #14cc52;
+  background: #bee9cc;
+  padding: 0 10px;
+  border-radius: 18px;
   font-weight: normal;
 }
 
 #example .status .unpaid {
   font-size: 20px;
   color: var(--text-color2);
+  font-weight: normal;
+  color: var(--text-color2);
+  background: #ff9d84;
+  padding: 0 10px;
+  border-radius: 18px;
   font-weight: normal;
 }
 
