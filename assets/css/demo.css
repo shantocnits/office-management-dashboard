@@ -164,15 +164,31 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .bredcam {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   margin: 20px 0;
+}
+
+.bredcam .bredcam-title {
+  display: flex;
+  align-items: center;
 }
 
 .bredcam span {
   font-size: 30px;
   padding: 0 6px;
   color: #aaaaaa;
+}
+
+.bredcam .demo-btn {
+    display: inline-block;
+  background: var(--text-color2);
+  padding: 4px 18px;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: var(--primary-font);
 }
 
 .bredcam h1 {
@@ -183,7 +199,7 @@ html ::-webkit-scrollbar-thumb:hover {
   color: var(--text-color2);
 }
 
-.bredcam a {
+.bredcam .bredcam-invoice {
   display: inline-block;
   font-weight: 600;
   font-size: 20px;

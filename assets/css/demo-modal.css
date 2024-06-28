@@ -77,7 +77,7 @@ label {
 Reset Default CSS End
 ====================*/
 
-/* Finance - Pop Up Modal Start */
+/* Demo - Pop Up Modal Start */
 body {
   position: relative;
   overflow: hidden !important;
@@ -420,4 +420,4 @@ a.ui-button:active,
   }
   
 }
-/* Finance Pop Up Modal End */
+/* Demo - Pop Up Modal End */
