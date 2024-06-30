@@ -78,40 +78,39 @@ Reset Default CSS End
 ====================*/
 
 /* Finance - Pop Up Modal Start */
-body {
-  position: relative;
-  overflow: hidden !important;
-}
-.main-content {
-  overflow: hidden !important;
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow-y: none !important;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
 }
 
-#popup-modal {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-  background: #000000b2 !important;
-  z-index: 999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: scroll;
-  padding: 100px 0px;
+.modal-content {
+  background-color: #fefefe;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
-#signup .demo-modal-title {
+#signup .modal-title {
   display: flex;
   justify-content: space-between;
 }
 
-#signup .demo-modal-title h1 {
+#signup .modal-title h1 {
   font-size: 36px;
   font-weight: bold;
   color: var(--text-color2);
   font-family: var(--primary-font);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #signup .close-btn {
@@ -125,8 +124,6 @@ body {
 
 #signup {
   width: 100%;
-  max-width: 65%;
-  margin: auto;
   background: var(--white);
   border-radius: 12px;
   padding: 30px 30px 20px 30px;
@@ -139,13 +136,12 @@ body {
   margin-bottom: 20px;
 }
 
-#signup label h1 {
-  font-size: 20px;
-  font-weight: 500;
+#signup .input-header {
+  width: 100%;
   font-family: var(--primary-font);
-  color: var(--text-color);
-  margin: 0;
-  padding-bottom: 4px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #signup .radioOrCheckboxes h1 {
@@ -170,7 +166,7 @@ body {
 
 #signup .radioOrCheckboxes .gender label span {
   padding-left: 6px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -183,6 +179,12 @@ body {
   padding-top: 10px !important;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #signup .radioOrCheckboxes .skills {
   display: flex;
 }
@@ -193,7 +195,7 @@ body {
   align-items: center;
   font-family: var(--primary-font);
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -214,6 +216,7 @@ body {
 
 #signup .data textarea {
   width: 100%;
+  height: 117px !important;
   border: 1px solid #aaaaaa;
   padding: 10px;
   border-radius: 8px;
@@ -399,18 +402,26 @@ a.ui-button:active,
     margin: auto;
     background: var(--white);
     border-radius: 12px;
-    padding: 30px 30px 20px 30px;
+    padding: 20px 0px 20px 0px;
     font-family: var(--primary-font);
   }
 
   #signup .radioOrCheckboxes .skills {
     margin-bottom: 10px;
   }
+
+  #signup .radioOrCheckboxes .skills label {
+    width: 100%;
+  }
+
+  .profile-wrapper p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
-  #signup .demo-modal-title h1 {
+  #signup .modal-title h1 {
     font-size: 24px;
     margin-bottom: 20px;
   }

@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Modals | Office Management by CNIT</title>
+  <title>Modal | Office Management by CNIT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+  <meta content="Pichforest" name="author" />
 
   <!-- App favicon -->
   <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
@@ -12,12 +14,12 @@
   <!-- Bootstrap Css -->
   <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
   <!-- Fontawesome link -->
-  <script src="./assets/js/fontawesome.js"></script>
   <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
   <!-- CSS Link-->
   <link href="assets/css/navbar-sidebar.css" rel="stylesheet" />
-  <link href="assets/css/demo.css" rel="stylesheet" />
+  <link href="assets/css/modals.css" rel="stylesheet" />
+  <link href="assets/css/finance-popup-modal.css" rel="stylesheet" />
 
   <!-- Include DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
@@ -549,6 +551,31 @@
             <a href="layouts-horizontal.html">
               <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
+                  d="M18.9795 26H2.5411C1.68493 26 1 25.3333 1 24.5V2.5C1 1.66667 1.68493 1 2.5411 1H18.9795C19.8356 1 20.5206 1.66667 20.5206 2.5V24.5C20.5206 25.3333 19.8356 26 18.9795 26Z"
+                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M26 3.5V22.1667L24.4589 25.3333L22.9178 22.1667V3.5H26Z" stroke="#AF2222" stroke-width="1.5"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22.9178 3.5V2C22.9178 1.5 23.3459 1 23.9452 1H24.9726C25.572 1 26 1.5 26 2V3.5H22.9178Z"
+                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M6.90752 22.5833C8.23149 22.5833 9.30478 21.5387 9.30478 20.25C9.30478 18.9613 8.23149 17.9167 6.90752 17.9167C5.58354 17.9167 4.51025 18.9613 4.51025 20.25C4.51025 21.5387 5.58354 22.5833 6.90752 22.5833Z"
+                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M14.6986 22.5833C16.0226 22.5833 17.0959 21.5387 17.0959 20.25C17.0959 18.9613 16.0226 17.9167 14.6986 17.9167C13.3746 17.9167 12.3013 18.9613 12.3013 20.25C12.3013 21.5387 13.3746 22.5833 14.6986 22.5833Z"
+                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <span class="menu-item" data-key="t-horizontal">Modals</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="layouts-horizontal.html">
+              <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
                   d="M13.5 26C20.4036 26 26 20.4036 26 13.5C26 6.59644 20.4036 1 13.5 1C6.59644 1 1 6.59644 1 13.5C1 20.4036 6.59644 26 13.5 26Z"
                   stroke="#AF2222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 <path
@@ -594,31 +621,6 @@
                   stroke-linejoin="round" />
               </svg>
               <span class="menu-item" data-key="t-horizontal">Setting</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="layouts-horizontal.html">
-              <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.9795 26H2.5411C1.68493 26 1 25.3333 1 24.5V2.5C1 1.66667 1.68493 1 2.5411 1H18.9795C19.8356 1 20.5206 1.66667 20.5206 2.5V24.5C20.5206 25.3333 19.8356 26 18.9795 26Z"
-                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M26 3.5V22.1667L24.4589 25.3333L22.9178 22.1667V3.5H26Z" stroke="#AF2222" stroke-width="1.5"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M22.9178 3.5V2C22.9178 1.5 23.3459 1 23.9452 1H24.9726C25.572 1 26 1.5 26 2V3.5H22.9178Z"
-                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M6.90752 22.5833C8.23149 22.5833 9.30478 21.5387 9.30478 20.25C9.30478 18.9613 8.23149 17.9167 6.90752 17.9167C5.58354 17.9167 4.51025 18.9613 4.51025 20.25C4.51025 21.5387 5.58354 22.5833 6.90752 22.5833Z"
-                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M14.6986 22.5833C16.0226 22.5833 17.0959 21.5387 17.0959 20.25C17.0959 18.9613 16.0226 17.9167 14.6986 17.9167C13.3746 17.9167 12.3013 18.9613 12.3013 20.25C12.3013 21.5387 13.3746 22.5833 14.6986 22.5833Z"
-                  stroke="#AF2222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span class="menu-item" data-key="t-horizontal">Demo</span>
             </a>
           </li>
 
@@ -707,108 +709,17 @@
   <!-- Hero Main Content Start -->
   <div class="main-content">
     <div class="page-content">
-      <!-- Cards Start -->
-      <section id="cards">
-        <div class="row">
-          <div class="col-xl col-sm-6 align-item-stretch">
-            <div class="card-item">
-              <div class="card-body">
-                <div class="align-items-center">
-                  <div class="card-icon">
-                    <img src="./assets/icons/projects-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <h4>Projects</h4>
-                    <h5>525</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl col-sm-6 align-item-stretch">
-            <div class="card-item">
-              <div class="card-body">
-                <div class="align-items-center">
-                  <div class="card-icon">
-                    <svg width="32" height="50" viewBox="0 0 32 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M28.0415 31.102C28.2176 30.2122 28.3057 29.3146 28.3057 28.4169C28.3057 23.8735 26.1043 19.6766 22.3818 17.0466L28.77 10.9363C29.1167 10.5953 28.9335 9.99858 28.4338 9.9284L19.1557 8.59767L15.0089 0.329794C14.7729 -0.116884 14.1568 -0.102923 13.9283 0.329794L9.7895 8.59767L0.511387 9.9284C0.0338794 9.99546 -0.181022 10.5952 0.183147 10.9363L6.5954 17.086C2.91298 19.7317 0.73556 23.9129 0.73556 28.4169C0.73556 34.1651 4.20973 39.0864 9.26913 41.2518H7.41185C7.07569 41.2518 6.81145 41.5196 6.81145 41.8424V44.559H4.71415C4.3779 44.559 4.11376 44.8267 4.11376 45.1495V49.4094C4.11376 49.7402 4.3779 50 4.71415 50H24.231C24.5672 50 24.8314 49.7402 24.8314 49.4094V45.1495C24.8314 44.8267 24.5672 44.559 24.231 44.559H22.1417V41.8424C22.1417 41.5196 21.8694 41.2518 21.5413 41.2518H19.7721C20.1643 41.0865 20.5487 40.8975 20.9169 40.6928H27.281C29.4802 40.6928 31.1316 38.746 31.1316 36.6061V35.1021C31.1316 33.2644 29.8913 31.4875 28.0415 31.102ZM27.105 28.4169C27.105 28.9996 27.0569 29.5823 26.9768 30.165C26.3525 29.354 25.5839 28.1649 25.2877 26.9681C25.1036 26.2043 24.4471 25.6767 23.6947 25.6767H23.5106L22.2377 18.4246C25.3038 20.8499 27.105 24.4877 27.105 28.4169ZM1.88827 10.9205L10.2778 9.72367C10.4699 9.69214 10.638 9.57406 10.7261 9.4008L14.4726 1.92823L18.219 9.4008C18.3071 9.57406 18.4752 9.69215 18.6753 9.72367L27.0569 10.9205C21.0661 16.6821 20.9249 16.7628 20.9249 16.8419C20.8367 16.9679 20.7888 17.1096 20.8207 17.2593L22.2537 25.4799L14.7448 21.5979C14.5766 21.5113 14.3685 21.5113 14.1924 21.5979L6.69144 25.4799L8.11641 17.3144C8.14556 17.1807 8.13305 16.9289 7.96426 16.7632C7.3643 16.173 3.468 12.4395 1.88827 10.9205ZM1.93634 28.4169C1.93634 24.5507 3.68945 20.9444 6.68342 18.5112L5.30654 26.4563C5.29852 26.4799 5.30654 26.4956 5.30654 26.5193C4.41786 28.0941 3.94558 29.8658 3.94558 31.6847C3.94558 33.7635 4.54598 35.6927 5.57869 37.3305C3.32124 35.0234 1.93634 31.8816 1.93634 28.4169ZM5.14637 31.6847C5.14637 30.0154 5.60264 28.3776 6.44323 26.9445L14.4726 22.7948L20.0522 25.6767H15.9936C15.169 25.6767 14.4966 26.3697 14.4966 27.2279C14.4966 28.0862 15.169 28.787 15.9936 28.787H21.9896C22.1016 28.787 22.2057 28.9209 22.2057 29.0784C22.2057 29.2358 22.1016 29.3697 21.9896 29.3697H19.5639C18.0108 29.3697 16.514 29.9603 15.3212 31.0154H14.8808C12.6785 31.0154 11.0222 32.9681 11.0222 35.1021V36.6061C11.0222 38.7394 12.6667 40.6928 14.8808 40.6928H17.4265C16.4979 41.0235 15.5213 41.2124 14.5367 41.2518C14.1924 41.236 13.8642 41.2046 13.528 41.1652C8.75677 40.5116 5.14637 36.5194 5.14637 31.6847ZM23.6306 45.7401V48.8189H5.31455V45.7401H23.6306ZM27.281 39.5117H14.8808C13.6801 39.5117 12.6794 38.6376 12.3511 37.4408H29.8108C29.4825 38.6376 28.4818 39.5117 27.281 39.5117ZM12.3432 34.2753C12.6794 33.0784 13.68 32.1965 14.8808 32.1965C31.94 32.2073 26.0559 32.2036 27.3291 32.2044C28.5059 32.2281 29.4825 33.0942 29.8107 34.2753H12.3432Z"
-                        fill="#AF2222" />
-                      <path
-                        d="M22.1899 12.3852L18.7716 15.6687L19.5802 20.3066C19.6516 20.7993 19.141 21.1503 18.7076 20.9286L14.4728 18.7396L10.2379 20.9286C9.81971 21.153 9.28409 20.7992 9.3734 20.3066L10.1819 15.6687L6.75565 12.3852C6.58757 12.2277 6.53157 11.9914 6.6035 11.7788C6.67562 11.5662 6.85973 11.4088 7.0839 11.3772L11.815 10.7001L13.9365 6.4874C14.1366 6.07793 14.8089 6.07793 15.0091 6.4874L17.1306 10.7001L21.8616 11.3772C22.3404 11.4446 22.5531 12.0448 22.1899 12.3852Z"
-                        fill="#192045" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>Events</h4>
-                    <h5>55</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl col-sm-6 align-item-stretch">
-            <div class="card-item">
-              <div class="card-body">
-                <div class="align-items-center">
-                  <div class="card-icon">
-                    <img src="./assets/icons/employes-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <h4>Employees</h4>
-                    <h5>25</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl col-sm-6 align-item-stretch">
-            <div class="card-item">
-              <div class="card-body">
-                <div class="align-items-center">
-                  <div class="card-icon">
-                    <img src="./assets/icons/clients-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <h4>Clients</h4>
-                    <h5>45</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl col-sm-6 align-item-stretch">
-            <div class="card-item">
-              <div class="card-body">
-                <div class="align-items-center">
-                  <div class="card-icon">
-                    <img src="./assets/icons/reports-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <h4>Reports</h4>
-                    <h5>50</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Cards End -->
-
       <!-- DataTable Start -->
       <div class="bredcam">
-        <div class="bredcam-title">
-          <h1>Finances</h1>
-          <span>|</span>
-          <a class="bredcam-invoice" href="#">Invoices</a>
+          <div class="bredcam-title">
+            <h1>Finances</h1>
+            <span>|</span>
+            <a class="bredcam-invoice" href="#">Invoices</a>
+          </div>
+          <div class="demo">
+            <a href="./demo-modal.html" class="demo-btn"> Modal </a>
+          </div>
         </div>
-        <div class="demo">
-          <a href="./demo-modal.html" class="demo-btn">
-            Demo
-          </a>
-        </div>
-      </div>
       <section id="data_table">
         <div class="button-container">
           <div class="search-item">
@@ -826,7 +737,7 @@
             <div class="dropdown">
               <button id="filterDropdownButton" class="btn btn-secondary dropdown-toggle" type="button"
                 aria-haspopup="true" aria-expanded="false">
-                <svg width="26" height="26" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="22" height="22" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect y="1" width="25" height="3" rx="1.5" fill="#192045" />
                   <rect y="11" width="25" height="3" rx="1.5" fill="#192045" />
                   <rect y="21" width="25" height="3" rx="1.5" fill="#192045" />
@@ -847,10 +758,10 @@
 
           <!-- File Export Start -->
           <div class="file-export-item">
-            <a href="./finance-popup-modal.html" type="button" class="create-invoice">
+            <button id="openModalBtn" type="button" class="create-invoice">
               <span>+</span>
               <h3>Create Invoice</h3>
-            </a>
+            </button>
 
             <!-- Custom buttons -->
             <button id="excelButton" class="dt-button">
@@ -5174,7 +5085,220 @@
   </div>
   <!-- Hero Main Content End -->
 
+  <!-- Finance- Pop Up Modal Start -->
+  <section id="myModal" class="modal">
+    <div class="modal-content">
+      <div id="popup-modal">
+        <form action="#" method="post" id="signup">
+          <div class="modal-title">
+            <h1>Create Modal</h1>
+            <a class="close-btn close">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <label class="data">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Enter your full name"
+                  required
+                /><br />
+              </label>
+    
+              <label class="data">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                /><br />
+              </label>
+    
+              <label class="data">
+                <input
+                  type="text"
+                  name="Username"
+                  placeholder="Enter your email or username"
+                  required
+                /><br />
+              </label>
+    
+              <label class="country">
+                <select name="country">
+                  <option>Select Your Country</option>
+                  <option>Bangladesh</option>
+                  <option>Soudi Arab</option>
+                  <option>America</option>
+                  <option>Brazil</option></select
+                ><br />
+              </label>
+    
+              <div class="datepicker-wrapper">
+                <lavel class="input-header">Choose a Date</lavel>
+                <label class="datepicker-container">
+                  <input
+                    type="text"
+                    id="datepicker-input"
+                    placeholder="Select a date"
+                  />
+                  <div id="datepicker"></div>
+                  <div class="calender">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 0.8C0 0.358172 0.358172 0 0.8 0H31.2C31.6418 0 32 0.358172 32 0.8V31.2C32 31.6418 31.6418 32 31.2 32H0.8C0.358172 32 0 31.6418 0 31.2V0.8ZM1.6 7.92442V30.4H30.4V7.92442H1.6ZM30.4 6.32442H1.6V1.6H30.4V6.32442ZM3.68 11.9851C3.68 11.5433 4.03817 11.1851 4.48 11.1851H8.96C9.40183 11.1851 9.76 11.5433 9.76 11.9851V16.4651C9.76 16.9069 9.40183 17.2651 8.96 17.2651H4.48C4.03817 17.2651 3.68 16.9069 3.68 16.4651V11.9851ZM5.28 12.7851V15.6651H8.16V12.7851H5.28ZM12.96 11.9851C12.96 11.5433 13.3182 11.1851 13.76 11.1851H18.24C18.6818 11.1851 19.04 11.5433 19.04 11.9851V16.4651C19.04 16.9069 18.6818 17.2651 18.24 17.2651H13.76C13.3182 17.2651 12.96 16.9069 12.96 16.4651V11.9851ZM14.56 12.7851V15.6651H17.44V12.7851H14.56ZM22.24 11.9851C22.24 11.5433 22.5982 11.1851 23.04 11.1851H27.52C27.9618 11.1851 28.32 11.5433 28.32 11.9851V16.4651C28.32 16.9069 27.9618 17.2651 27.52 17.2651H23.04C22.5982 17.2651 22.24 16.9069 22.24 16.4651V11.9851ZM23.84 12.7851V15.6651H26.72V12.7851H23.84ZM3.68 21.8594C3.68 21.4175 4.03817 21.0594 4.48 21.0594H8.96C9.40183 21.0594 9.76 21.4175 9.76 21.8594V26.3394C9.76 26.7812 9.40183 27.1394 8.96 27.1394H4.48C4.03817 27.1394 3.68 26.7812 3.68 26.3394V21.8594ZM5.28 22.6594V25.5394H8.16V22.6594H5.28ZM12.96 21.8594C12.96 21.4175 13.3182 21.0594 13.76 21.0594H18.24C18.6818 21.0594 19.04 21.4175 19.04 21.8594V26.3394C19.04 26.7812 18.6818 27.1394 18.24 27.1394H13.76C13.3182 27.1394 12.96 26.7812 12.96 26.3394V21.8594ZM14.56 22.6594V25.5394H17.44V22.6594H14.56ZM22.24 21.8594C22.24 21.4175 22.5982 21.0594 23.04 21.0594H27.52C27.9618 21.0594 28.32 21.4175 28.32 21.8594V26.3394C28.32 26.7812 27.9618 27.1394 27.52 27.1394H23.04C22.5982 27.1394 22.24 26.7812 22.24 26.3394V21.8594ZM23.84 22.6594V25.5394H26.72V22.6594H23.84Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </label>
+              </div>
+    
+              <fieldset class="radioOrCheckboxes">
+                <lavel class="input-header">Programming Skills</lavel>
+                <div class="skills">
+                  <div class="skil-item">
+                    <label>
+                      <input type="checkbox" name="hobbies" value="music" />
+                      HTML
+                    </label>
+                    <label>
+                      <input type="checkbox" name="travel" value="travel" />
+                      CSS
+                    </label>
+                    <label>
+                      <input type="checkbox" name="movies" value="movies" />
+                      JavaScript
+                    </label>
+                  </div>
+                  <div class="skill-item">
+                    <label>
+                      <input type="checkbox" name="cooking" value="cooking" />
+                      React
+                    </label>
+                    <label>
+                      <input type="checkbox" name="movies" value="movies" />
+                      Angular
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+    
+            <div class="col-lg-6">
+              <label class="data">
+                <input
+                  type="number"
+                  name="secondName"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </label>
+    
+              <label class="data">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                /><br />
+              </label>
+    
+              <fieldset class="radioOrCheckboxes">
+                <label class="input-header">Gender</label>
+                <div class="gender">
+                  <label class="male">
+                    <input type="radio" name="gender" value="male" />
+                    <span>Male </span>
+                  </label>
+                  <label class="female">
+                    <input type="radio" name="gender" value="female" />
+                    <span>Female</span>
+                  </label>
+                </div>
+              </fieldset>
+    
+              <label class="data textarea">
+                <textarea
+                  name="bio"
+                  rows="6"
+                  placeholder="Type Your Messages..."
+                ></textarea
+                ><br />
+              </label>
+    
+              <div class="upload-profile">
+                <div class="item">
+                  <div class="img-box">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        width="50"
+                        height="50"
+                        fill="url(#pattern0_1204_6)"
+                        fill-opacity="0.5"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern0_1204_6"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_1204_6"
+                            transform="scale(0.005)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_1204_6"
+                          width="200"
+                          height="200"
+                          xlink:href="data:image/png;base64,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"
+                        />
+                      </defs>
+                    </svg>
+                  </div>
+    
+                  <div class="profile-wrapper">
+                    <label class="custom-file-input-wrapper">
+                      <input
+                        type="file"
+                        class="custom-file-input"
+                        aria-label="Upload Photo"
+                      />
+                    </label>
+                    <p>PNG,JPEG or GIF (up to 1 MB)</p>
+                  </div>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+        
+  </section>
+  <!-- Finance- Pop Up Modal End -->
+
   <!-- JAVASCRIPT -->
+  <script src="./assets/js/fontawesome.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/metismenujs.min.js"></script>
   <script src="assets/js/simplebar.min.js"></script>
@@ -5199,6 +5323,7 @@
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
 
   <script src="./assets/js/datatables.js"></script>
+  <script src="./assets/js/finance-popup-modal.js"></script>
 </body>
 
 </html>

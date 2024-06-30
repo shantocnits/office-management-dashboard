@@ -96,62 +96,6 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 /* scrollbar */
 
-/* Cards Start */
-
-#cards {
-  width: 100%;
-  margin-top: -10px;
-}
-
-#cards .card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-color);
-  border-radius: 6px;
-  transition: 0.3s;
-  margin: 10px 0;
-}
-
-#cards .card-body:hover {
-  box-shadow: var(--box-shadow);
-}
-
-#cards .card-icon {
-  display: block;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-}
-
-#cards .card-icon img {
-  width: 100%;
-}
-
-#cards .card-icon svg {
-  width: 100% !important;
-}
-
-#cards h4 {
-  color: var(--text-color);
-  font-size: 24px;
-  font-weight: 600;
-  font-family: var(--primary-font);
-  margin-top: 8px !important;
-  margin-bottom: 0px;
-}
-
-#cards h5 {
-  color: var(--text-color2);
-  font-size: 26px;
-  font-weight: 600;
-  font-family: var(--primary-font);
-  text-align: center;
-  margin: 0;
-}
-
-/* Cards End */
-
 /* Data table Start */
 
 #data_table {
@@ -166,7 +110,7 @@ html ::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  margin: 20px 0;
+  margin: 0px 0px 10px 0px;
 }
 
 .bredcam span {
@@ -177,7 +121,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .bredcam h1 {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 32px;
   margin: 0;
   font-family: var(--primary-font);
   color: var(--text-color2);
@@ -191,15 +135,6 @@ html ::-webkit-scrollbar-thumb:hover {
   font-family: var(--primary-font);
   color: var(--text-color);
 }
-/* 
-table.dataTable {
-  border-spacing: 0px !important;
-  border-collapse:var(--text-color2) !important;
-}
-
-table.dataTable td {
-  border-right: none !important;
-} */
 
 .button-container {
   display: flex;
@@ -273,7 +208,7 @@ table.dataTable td {
   padding: 0px 10px;
   white-space: nowrap;
   margin-bottom: 4px;
-  height: 36px;
+  height: 30px;
   border-radius: 5px;
   background: var(--text-color2);
   color: var(--white);
@@ -301,8 +236,8 @@ table.dataTable td {
 }
 
 .file-export-item svg {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 .file-export-item .dt-button svg:hover {
   fill: var(--text-color2) !important;
@@ -354,9 +289,9 @@ table.dataTable td {
 .table-searchbox {
   display: flex;
   align-items: center;
-  font-size: 16px !important;
+  font-size: 14px !important;
   width: 300px;
-  padding: 6px 10px;
+  padding: 4px 10px;
   border: 1px solid var(--gray);
   border-radius: 4px;
 }
@@ -430,7 +365,7 @@ table.dataTable.display tbody tr > .sorting_1 {
 
 #example .project span,
 #example .serial span {
-  font-size: 20px;
+  font-size: 16px !important;
   font-weight: normal;
   color: var(--text-color);
 }
@@ -444,7 +379,7 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example .invoice span {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -479,7 +414,7 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example .client-details h1 {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-color);
   font-weight: 700;
   font-family: var(--primary-font);
@@ -496,35 +431,35 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example .total h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 #example .total h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 #example .total h2 span {
-  font-size: 20px;
+  font-size: 18px;
   color: #14cc52;
   padding-right: 5px;
 }
 
 #example .total h3 {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-color2);
 }
 
 #example .date span {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-color);
   font-weight: normal;
 }
 
 #example .status span {
   height: 10px;
-  font-size: 20px;
+  font-size: 16px;
   color: #14cc52;
   background: #bee9cc;
   padding: 0 10px;
@@ -533,7 +468,7 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 #example .status .unpaid {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-color2);
   font-weight: normal;
   color: var(--text-color2);
@@ -655,17 +590,8 @@ table.dataTable.display tbody tr > .sorting_1 {
 }
 
 @media screen and (max-width: 1350px) {
-  #example td span {
-    font-size: 19px !important;
-  }
   #example {
     width: 1100px !important;
-  }
-
-  #example .total h1,
-  #example .total h3,
-  #example .total h2 {
-    font-size: 19px !important;
   }
 
   #example .project {
