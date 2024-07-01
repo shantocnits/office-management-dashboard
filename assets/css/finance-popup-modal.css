@@ -80,19 +80,20 @@ Reset Default CSS End
 /* Finance - Pop Up Modal Start */
 
 .modal {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   z-index: 9999;
   left: 0;
   top: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   overflow-y: none !important;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
+  position: relative;
   background-color: #fefefe;
   margin: 40px auto;
   padding: 20px;
@@ -100,9 +101,23 @@ Reset Default CSS End
   width: 80%;
 }
 
-#signup .modal-title {
-  display: flex;
-  justify-content: space-between;
+.modal-content .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.modal-content .close-btn i {
+  font-size: 30px;
+  color: var(--text-color2);
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.modal-content .close-btn i:hover {
+  background: rgba(119, 119, 119, 0.253);
 }
 
 #signup .modal-title h1 {
@@ -111,15 +126,6 @@ Reset Default CSS End
   color: var(--text-color2);
   font-family: var(--primary-font);
   margin-bottom: 20px;
-}
-
-#signup .close-btn {
-  cursor: pointer;
-}
-
-#signup .close-btn i {
-  font-size: 30px;
-  color: var(--text-color2);
 }
 
 #signup {
@@ -185,6 +191,25 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#signup input {
+  transition: 0.4s;
+}
+
+#signup input:focus {
+  border-color: var(--text-color2) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
+#signup textarea:focus {
+  border-color: var(--text-color2) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
+#signup select:focus {
+  border-color: var(--text-color2) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
 #signup .radioOrCheckboxes .skills {
   display: flex;
 }
@@ -216,12 +241,13 @@ input::-webkit-inner-spin-button {
 
 #signup .data textarea {
   width: 100%;
-  height: 117px !important;
+  height: 122px !important;
   border: 1px solid #aaaaaa;
   padding: 10px;
   border-radius: 8px;
   font-family: var(--primary-font);
   outline: none;
+  transition: 0.4s !important;
 }
 
 #signup .textarea {
@@ -319,6 +345,7 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   font-family: var(--primary-font);
   outline: none;
+  transition: 0.4s;
 }
 
 .datepicker-wrapper h1 {
@@ -348,52 +375,282 @@ input::-webkit-inner-spin-button {
   z-index: 1000;
 }
 
-.datepicker-container input {
+/* Dethpicker Start */
+
+.datepicker-wrapper .controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+}
+
+.datepicker-wrapper .controls:focus {
+  border-color: #af2222 !important;
+}
+
+.datepicker-wrapper .controls .calander {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  z-index: 9999999999;
+  right: 10px;
+}
+
+.datepicker-wrapper {
+  margin-bottom: 20px;
+}
+
+.datepicker-wrapper .controls {
+  border: none;
+  position: relative;
+}
+
+.datepicker-wrapper .controls input {
+  display: block;
+  width: 100% !important;
+}
+
+.datepicker-wrapper .calander-icon {
+  position: absolute;
+  right: 10px;
+  width: 30px !important;
+  margin: 0px !important;
+  z-index: 9999999999999999999 !important;
+}
+
+.datepicker-wrapper .controls img {
+  width: 25px;
+  height: 25px;
+}
+
+.datepicker-wrapper .form-control {
+  border-radius: 8px;
+  padding: 13px 10px;
+}
+
+.datepicker {
+  z-index: 9999999999999;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  border: 1px solid var(--gray);
+  color: var(--text-color);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.dropdown-menu {
+  box-shadow: none;
+  border: 1px solid var(--gray) !important;
+}
+
+.datepicker > div {
+  display: none;
+}
+.datepicker table {
   width: 100%;
-  font-size: 16px;
-  font-weight: normal;
-  border: none !important;
-  font-family: var(--primary-font);
+  margin: 0;
 }
 
-.ui-state-highlight,
-.ui-widget-content .ui-state-highlight,
-.ui-widget-header .ui-state-highlight {
-  border: 1px solid var(--gray) !important;
-  background: #f6f6f6 !important;
-  color: var(--text-color) !important;
+.datepicker th {
+  text-align: center;
+  font-weight: 300;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker td {
+  border-top: 1px solid #dddddd;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.datepicker tr:first-child td {
+  border-top: 0;
+}
+.datepicker thead tr:first-child {
+  height: 30px;
+}
+.datepicker td p {
+  border-radius: 50%;
+  height: 27px;
+  line-height: 27px;
+  margin: 3px 0 8px;
+  width: 27px;
+}
+.datepicker th {
+  font-size: 10px;
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-  border: 1px solid #c5c5c5;
-  background: var(--white) !;
-  font-weight: normal;
-  color: var(--text-color) !important;
+.datepicker td.day p {
+  margin: 2px 0px !important;
 }
 
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active,
-a.ui-button:active,
-.ui-button:active,
-.ui-button.ui-state-active:hover {
-  border: 1px solid var(--gray) !important;
+.datepicker td.day:hover p {
   background: var(--background2) !important;
-  font-weight: normal;
-  color: var(--white) !important;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.ui-widget-header {
-  border: 1px solid #dddddd;
-  background: var(--background) !important;
-  color: #333333;
-  font-weight: bold;
+.datepicker td.day.disabled {
+  color: #eeeeee;
 }
+.datepicker td.old,
+.datepicker td.new {
+  /*   color: #999999; */
+  color: #dddddd;
+  border-top: 0;
+}
+.datepicker td.active p,
+.datepicker td.active:hover p {
+  color: #ffffff;
+  background-color: var(--text-color2) !important;
+}
+.datepicker td.active.blue p,
+.datepicker td.active.blue:hover p {
+  background-color: #007aff;
+}
+.datepicker td.active.green p,
+.datepicker td.active.green:hover p {
+  background-color: #4cd964;
+}
+.datepicker td.active.black p,
+.datepicker td.active.black:hover p {
+  background-color: #4a4a4a;
+}
+.datepicker td.active.red p,
+.datepicker td.active.red:hover p {
+  background-color: #ff3a2d;
+}
+
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled] {
+  color: #ffffff;
+}
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active {
+  background-color: #003399 \9;
+}
+
+.datepicker td span {
+  display: block;
+  width: 47px;
+  height: 44px;
+  line-height: 44px;
+  color: var(--text-color);
+  float: left;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker td span:hover {
+  background: var(--background2);
+  color: var(--white);
+}
+.datepicker td span.active {
+  color: var(--white);
+  background-color: var(--text-color2) !important;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: var(--white);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  color: #ffffff;
+  background-color: #ff3a2d;
+}
+.datepicker td span.active:active,
+.datepicker td span.active.active {
+  background-color: #003399 \9;
+}
+.datepicker td span.old {
+  color: var(--text-color) !important;
+}
+.datepicker th.switch {
+  font-size: 16px;
+  width: 145px;
+  height: 10px !important;
+  margin: 0px 5px !important;
+}
+
+.datepicker.red th.switch {
+  color: #ff3b30;
+}
+.datepicker th.next,
+.datepicker th.prev {
+  width: 40px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  font-size: 33px;
+  padding: 5px;
+}
+
+.datepicker th.next p,
+.datepicker th.prev p {
+  margin: 0px !important;
+}
+
+.datepicker th.dow {
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.datepicker thead tr:first-child th {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.datepicker thead tr:first-child th:hover {
+  background: var(--hover-color);
+}
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
+  display: block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 0;
+  margin-top: 10px !important;
+}
+.datepicker-months .table-condensed > tbody > tr > td,
+.datepicker-years .table-condensed > tbody > tr > td {
+  width: 210px;
+  margin-top: 10px !important;
+}
+.table-condensed p {
+  padding: 0;
+  line-height: 32px;
+}
+/* Dethpicker End */
 
 @media screen and (max-width: 992px) {
   #signup {
@@ -420,7 +677,6 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 768px) {
-
   #signup .modal-title h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -429,6 +685,5 @@ a.ui-button:active,
   #signup .close-btn i {
     font-size: 22px;
   }
-  
 }
 /* Finance Pop Up Modal End */
